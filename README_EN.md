@@ -35,7 +35,7 @@ To avoid one-click first drafts that do not match real paper-writing habits, Aca
 
 ## Chart Design
 
-We also strengthen paper figure and chart design, with attention to chart-type selection, layout, color, information density, and readability. The table below shows selected examples.
+We also strengthen paper figure and chart design across common chart scenarios in CS, medicine, finance, and related disciplines, including comparisons, trends, uncertainty displays, diagnostic evaluation, survival analysis, review evidence, omics, and health-economics displays, with attention to chart-type selection, layout, color, information density, and readability. The table below shows selected examples.
 
 <table>
   <thead>
