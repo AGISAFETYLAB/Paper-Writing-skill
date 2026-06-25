@@ -33,6 +33,109 @@ Academic Writing Skill 会先根据用户请求进入对应学科包，再处理
 
 为了避免“一键生成”的初稿不符合真实论文写作习惯，Academic Writing Skill 在生成完整初稿之前设置了两个检查点：agent 必须分别在 `Writing Policy` 和 `Paper Framework` 阶段停下来，将原本可能被静默决定的内容展示给作者确认或修改，包括论文身份、证据边界、目标 venue、section 结构和图表计划等。
 
+## 图表设计
+
+我们对论文图表设计做了单独强化，重点关注图表类型选择、版式、配色、信息密度和可读性。下表为部分展示。
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Chart family</th>
+      <th align="center">PDF 示例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Bar and comparison</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/01_bar_comparison.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/01_bar_comparison_page01.png" width="320" alt="Bar and comparison charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Line / longitudinal</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/02_line_longitudinal.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/02_line_longitudinal_page01.png" width="320" alt="Line and longitudinal charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Scatter / Pareto</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/03_scatter_pareto.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/03_scatter_pareto_page01.png" width="320" alt="Scatter and Pareto charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Distribution / uncertainty</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/05_distribution_uncertainty.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/05_distribution_uncertainty_page01.png" width="320" alt="Distribution and uncertainty charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Survival / time-to-event</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/06_survival_time_to_event.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/06_survival_time_to_event_page01.png" width="320" alt="Survival and time-to-event charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Profile summaries</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/07_profile_summaries.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/07_profile_summaries_page01.png" width="320" alt="Profile summary charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Effect / review evidence</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/07_effect_review.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/07_effect_review_page01.png" width="320" alt="Effect estimates and review evidence PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostic / extended</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/09_diagnostic_extended.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/09_diagnostic_extended_page01.png" width="320" alt="Diagnostic and extended charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Biomarker / omics</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/09_biomarker_omics.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/09_biomarker_omics_page01.png" width="320" alt="Biomarker and omics displays PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Qualitative / composite</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/10_qualitative_composites.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/10_qualitative_composites_page01.png" width="320" alt="Qualitative and composite panels PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Global health / economics</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/11_global_health_economics.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/11_global_health_economics_page01.png" width="320" alt="Global-health and economic displays PDF preview">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## 安装方式
 
 ### 快速安装

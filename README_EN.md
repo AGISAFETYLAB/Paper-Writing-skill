@@ -33,6 +33,109 @@ Academic Writing Skill first routes the request to the appropriate discipline pa
 
 To avoid one-click first drafts that do not match real paper-writing habits, Academic Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
 
+## Chart Design
+
+We also strengthen paper figure and chart design, with attention to chart-type selection, layout, color, information density, and readability. The table below shows selected examples.
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Chart family</th>
+      <th align="center">PDF example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Bar and comparison</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/01_bar_comparison.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/01_bar_comparison_page01.png" width="320" alt="Bar and comparison charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Line / longitudinal</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/02_line_longitudinal.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/02_line_longitudinal_page01.png" width="320" alt="Line and longitudinal charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Scatter / Pareto</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/03_scatter_pareto.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/03_scatter_pareto_page01.png" width="320" alt="Scatter and Pareto charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Distribution / uncertainty</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/05_distribution_uncertainty.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/05_distribution_uncertainty_page01.png" width="320" alt="Distribution and uncertainty charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Survival / time-to-event</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/06_survival_time_to_event.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/06_survival_time_to_event_page01.png" width="320" alt="Survival and time-to-event charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Profile summaries</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/07_profile_summaries.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/07_profile_summaries_page01.png" width="320" alt="Profile summary charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Effect / review evidence</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/07_effect_review.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/07_effect_review_page01.png" width="320" alt="Effect estimates and review evidence PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostic / extended</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/09_diagnostic_extended.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/09_diagnostic_extended_page01.png" width="320" alt="Diagnostic and extended charts PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Biomarker / omics</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/09_biomarker_omics.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/09_biomarker_omics_page01.png" width="320" alt="Biomarker and omics displays PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Qualitative / composite</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/10_qualitative_composites.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/10_qualitative_composites_page01.png" width="320" alt="Qualitative and composite panels PDF preview">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Global health / economics</strong></td>
+      <td align="center" width="72%">
+        <a href="assets/readme/chart-gallery/pdfs/11_global_health_economics.pdf">
+          <img src="assets/readme/chart-gallery/png_previews/11_global_health_economics_page01.png" width="320" alt="Global-health and economic displays PDF preview">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Install
 
 > Quick install: you can copy the repository URL `https://github.com/AI45Lab/Academic-Writing-skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
