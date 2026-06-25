@@ -35,7 +35,9 @@ Academic Writing Skill 会先根据用户请求进入对应学科包，再处理
 
 ## 安装方式
 
-> 快速安装：您可以直接把项目地址 `https://github.com/AI45Lab/Academic-Writing-skill.git` 复制给你的 AI agent，让它按照本 README 安装完整包或某个学科包。
+### 快速安装
+
+您可以直接把项目地址 `https://github.com/AI45Lab/Academic-Writing-skill.git` 复制给你的 AI agent，让它按照本 README 安装完整包或某个学科包。
 
 先下载仓库：
 
