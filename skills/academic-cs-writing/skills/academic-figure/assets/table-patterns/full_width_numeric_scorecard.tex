@@ -1,0 +1,31 @@
+% Reusable table skeleton. Replace labels, values, caption, and label with
+% source-backed paper content. Requires booktabs, array, and xcolor[table].
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableFocusTint}{HTML}{F2F6FB}
+\begin{table}[t]
+\centering
+\caption{Full-width numeric scorecard with grouped metrics.}
+\label{tab:full-width-numeric-scorecard}
+\scriptsize
+\setlength{\tabcolsep}{2.8pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.24\linewidth}rrrrrrrr@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Method} & \multicolumn{1}{c}{\textbf{Coverage}} &
+\multicolumn{2}{c}{\textbf{Rates}} & \multicolumn{5}{c}{\textbf{Outcome counts}} \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-4}\cmidrule(l){5-9}
+\rowcolor{TableHeaderTint}
+ & \textbf{N} & \textbf{Err. $\downarrow$} & \textbf{Succ. $\uparrow$} &
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\
+\midrule
+Baseline A & 128 & 31.4 & 51.6 & 34 & 8 & 66 & 9 & 11 \\
+Baseline B & 126 & 28.2 & 55.1 & 29 & 7 & 70 & 8 & 12 \\
+Baseline C & 132 & 25.8 & 58.3 & 27 & 7 & 77 & 10 & 11 \\
+\midrule
+\rowcolor{TableFocusTint}
+\textbf{Proposed system} & \textbf{134} & \textbf{18.7} & \textbf{66.4} &
+\textbf{20} & \textbf{5} & \textbf{89} & \textbf{7} & \textbf{13} \\
+\bottomrule
+\end{tabular*}
+\end{table}

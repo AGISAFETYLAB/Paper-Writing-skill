@@ -1,0 +1,38 @@
+name: academic-figure
+version: 1.0.0
+always_load:
+  - references/display-selection.md
+  - references/figures.md
+  - references/table-design.md
+references:
+  on_demand:
+    - condition: "Finance Table Design Gate, table content hygiene, venue-specific table overrides, table skeletons, table payoff, table provenance ledger, page_budget_cost, source_table_to_script_map, or appendix destination"
+      path: references/table-design.md
+    - condition: "LaTeX table static lint, vertical rules, hline, resizebox, tabularx declared-width defects, leading decimals without zero, or central_contrast_missing_uncertainty"
+      path: scripts/lint_finance_tables.py
+    - condition: "backend, export format, source-data-to-panel mapping, or rendered preview QA"
+      path: references/figure-export-qa.md
+    - condition: "visual asset QA, cropped title, clipped axis label, clipped legend, blank preview, edge crop, or unused margin"
+      path: scripts/audit_visual_assets.py
+    - condition: "finance figure palette, color consistency, grayscale fallback, or cross-figure visual style"
+      path: references/finance-palette.md
+    - condition: "canonical finance palette tokens, Python palette registry, semantic color map, or small-N dark-color safeguard"
+      path: scripts/finance_palette.py
+    - condition: "figure or table placement, single-column, double-column, figure*, table*, final size, float ordering, or appendix overflow"
+      path: references/figure-layout.md
+    - condition: "compiled manuscript table pages, contact sheet QA, manual layout inspection, right-side table underfill, overfull boxes, or float-size warnings"
+      path: scripts/inspect_compiled_layout.py
+    - condition: "user selects R or provides R plotting scripts/data workflow"
+      path: references/r-figure-workflow.md
+    - condition: "R backend selected and finance display family must be chosen"
+      path: references/r-chart-catalog.md
+    - condition: "user selects Python or provides Python plotting scripts/data workflow"
+      path: references/python-figure-workflow.md
+    - condition: "Python backend selected and finance display family must be chosen"
+      path: references/python-chart-catalog.md
+    - condition: "regression, uncertainty, event-study, backtest, or robustness display"
+      path: ../../_shared/checks/econometrics.md
+    - condition: "DiD, IV, RD, synthetic control, event-study, portfolio-sort, factor-model, structural, or ML display"
+      path: ../../_shared/checks/identification-strategies.md
+    - condition: "section-specific display integration"
+      path: ../academic-writing/references/sections/index.md

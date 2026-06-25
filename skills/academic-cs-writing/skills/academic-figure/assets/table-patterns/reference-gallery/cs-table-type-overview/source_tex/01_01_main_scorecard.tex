@@ -1,0 +1,58 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=7.6in,paperheight=3.45in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Main Result Scorecard}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Headline method-vs-baseline comparison with grouped metrics.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Main result scorecard with grouped coverage, rate, and outcome-count columns.}
+\label{tab:main-scorecard}
+\scriptsize
+\setlength{\tabcolsep}{2.8pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}L{0.24\linewidth}rrrrrrrr@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Method} & \multicolumn{1}{c}{\textbf{Coverage}} &
+\multicolumn{2}{c}{\textbf{Rates}} & \multicolumn{5}{c}{\textbf{Outcome counts}} \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-4}\cmidrule(l){5-9}
+\rowcolor{HeaderTint}
+ & \textbf{N} & \textbf{Err. $\downarrow$} & \textbf{Succ. $\uparrow$} &
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\
+\midrule
+Baseline A & 128 & 31.4 & 51.6 & 34 & 8 & 66 & 9 & 11 \\
+Baseline B & 126 & 28.2 & 55.1 & 29 & 7 & 70 & 8 & 12 \\
+Baseline C & 132 & 25.8 & 58.3 & 27 & 7 & 77 & 10 & 11 \\
+\midrule
+\rowcolor{FocusRow}
+\textbf{Proposed system} & \textbf{134} & \textbf{18.7} & \textbf{66.4} &
+\textbf{20} & \textbf{5} & \textbf{89} & \textbf{7} & \textbf{13} \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Full-width numeric table: tabular* + \extracolsep{\fill}; bounded first semantic column.}}
+\end{document}

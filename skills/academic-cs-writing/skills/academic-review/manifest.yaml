@@ -1,0 +1,52 @@
+name: academic-review
+version: 3.0.0
+description: >
+  Declarative manifest for the academic-review skill. SKILL.md loads the closing-gates
+  fragment and the review/check references on demand, and runs the blocking draft audit.
+  Cross-skill stance and the shared claim-evidence / metric-design rubrics live at
+  ../../_shared. Part of the academic-writing collection.
+
+always_load:
+  - ../../_shared/core/stance.md
+  - static/closing-gates.md
+
+axes:
+  venue_kind:
+    detect: |
+      Conference or journal. Journal adds the mandatory-statements / display-item-caps
+      check to the submission-readiness gate. Default to conference unless the caller
+      explicitly says journal.
+    values:
+      conference: references/checks/submission-readiness.md
+      journal: references/checks/journal-submission-elements.md
+    default: conference
+    multi: false
+
+references:
+  on_demand:
+    - condition: "two-round post-draft review loop (self + independent subagent)"
+      path: references/sections/paper-review.md
+    - condition: "reviewer-risk audit before submission"
+      path: references/checks/reviewer-risk.md
+    - condition: "final full-paper review, writing quality audit, or user asks to check writing craft"
+      path: references/checks/writing-craft.md
+    - condition: "final submission-readiness check after a full paper draft exists"
+      path: references/checks/submission-readiness.md
+    - condition: "Venue Kind is journal: mandatory statements, display-item caps/tiers, methods placement, word/length budget"
+      path: references/checks/journal-submission-elements.md
+    - condition: "Venue Kind is journal and the manuscript has data/code/source-data/reproducibility availability obligations"
+      path: references/checks/data-code-availability.md
+    - condition: "Nature-family, Science-family, Cell-family, or other broad-audience high-impact journal target"
+      path: references/checks/high-impact-journal-review.md
+    - condition: "claim-evidence audit or high-risk central claim (shared rubric)"
+      path: ../../_shared/checks/claim-evidence.md
+    - condition: "metric design audit for experiments (shared rubric)"
+      path: ../../_shared/checks/metric-design.md
+
+scripts:
+  - condition: "blocking mechanical draft audit before a draft is returned"
+    path: scripts/audit_draft.py
+    usage: "python3 <skill>/scripts/audit_draft.py paper --framework <framework.md> [--max-content-pages <limit>]"
+  - condition: "compiled PDF layout QA is needed for figure/table pages, contact sheets, or float-layout log signals"
+    path: scripts/inspect_compiled_layout.py
+    usage: "python3 <skill>/scripts/inspect_compiled_layout.py paper --pages display --out-dir paper/layout-qa"

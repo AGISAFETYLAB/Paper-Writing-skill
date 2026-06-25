@@ -1,0 +1,45 @@
+name: academic-figure
+version: 1.0.0
+always_load:
+  - references/figures.md
+axes:
+  study_type:
+    detect: |
+      Use the confirmed Paper Framework study_type when available. If the display request is
+      standalone, infer the reporting checklist from the study design and ask when two checklists
+      would change required displays.
+    values:
+      consort-rct: ../../_shared/checklists/consort-rct.md
+      spirit-protocol: ../../_shared/checklists/spirit-protocol.md
+      strobe-observational: ../../_shared/checklists/strobe-observational.md
+      prisma-review: ../../_shared/checklists/prisma-review.md
+      stard-diagnostic: ../../_shared/checklists/stard-diagnostic.md
+      tripod-prediction: ../../_shared/checklists/tripod-prediction.md
+      care-case-report: ../../_shared/checklists/care-case-report.md
+      gather-global-health: ../../_shared/checklists/gather-global-health.md
+      cheers-health-economics: ../../_shared/checklists/cheers-health-economics.md
+    multi: false
+references:
+  on_demand:
+    - condition: "section-specific display integration"
+      path: ../academic-writing/references/sections/index.md
+    - condition: "reporting checklist controls the display"
+      path: ../../_shared/checklists/items/index.md
+    - condition: "backend, export format, source-data-to-panel mapping, or rendered preview QA"
+      path: references/figure-export-qa.md
+    - condition: "user selects R or provides R plotting scripts/data workflow"
+      path: references/r-figure-workflow.md
+    - condition: "R backend selected and chart family must be chosen"
+      path: references/r-chart-catalog.md
+    - condition: "user selects Python or provides Python plotting scripts/data workflow"
+      path: references/python-figure-workflow.md
+    - condition: "Python backend selected and chart family must be chosen"
+      path: references/python-chart-catalog.md
+    - condition: "generated display previews need route-specific layout QA for tables or multi-panel figures"
+      path: scripts/audit_display_layout.py
+    - condition: "compiled manuscript table pages, LaTeX table aesthetics QA, contact sheet inspection, overfull boxes, float too large warnings, or right-side table underfill"
+      path: scripts/inspect_compiled_layout.py
+    - condition: "synthetic preview of updated medical display families is requested"
+      path: scripts/generate_updated_display_preview.py
+    - condition: "chart type overview grouped by major display family is requested"
+      path: scripts/generate_chart_type_overview.py

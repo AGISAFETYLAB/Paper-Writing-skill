@@ -1,0 +1,214 @@
+name: academic-writing
+version: 3.0.0
+description: >
+  Declarative manifest for the academic-writing hub skill. SKILL.md uses this to
+  decide which fragments to load for a given writing request. The main axes are
+  workflow (full-draft or draft-revision), venue_kind, venue, and paper_type.
+  Cross-skill shared content (core stance/gates/contract, templates, paper-types,
+  venues, shared check rubrics) lives at the repository root under
+  ../../_shared. Figures/tables, citations, and review/audits are delegated to the
+  sibling skills academic-figure, academic-citation, and academic-review.
+
+always_load:
+  # Core stance, gates, and contract — shared across the collection
+  - ../../_shared/core/stance.md
+  - ../../_shared/core/gates.md
+  - ../../_shared/core/contract.md
+
+axes:
+  workflow:
+    detect: |
+      BLOCKING GATE. Decide the workflow from the user request. Full Draft
+      Workflow when the user provides a workspace or asks for a complete first
+      paper draft from project materials. Draft Revision Workflow when the user
+      provides existing prose and asks to rewrite, polish, diagnose, review,
+      compress, weaken claims, or improve flow. If ambiguous, ask one concise
+      question and stop.
+    values:
+      full-draft: static/workflow/full-draft.md
+      draft-revision: static/workflow/draft-revision.md
+    multi: false
+
+  venue_kind:
+    detect: |
+      Decide this immediately after workflow routing and before paper_type.
+      Allowed values are conference and journal. Select journal only when the
+      user explicitly says the target is a journal article or names a journal
+      venue/track (for example JMLR, TPAMI, Nature-family, Nature
+      Communications, TMLR, IEEE Transactions, ACM Transactions,
+      Elsevier/Springer/Wiley journal, or a "journal paper").
+      Default to conference otherwise.
+      Do not infer journal merely from long length, IMRaD structure, survey
+      style, complete experiments, or lack of a named conference. If the target
+      is not explicitly journal, route as conference. The venue_kind selects
+      the paper_type family: conference values use ../../_shared/paper-types/*.md;
+      journal values use ../../_shared/paper-types/journal/*.md.
+    values:
+      conference: ../../_shared/venues/index.md
+      journal: ../../_shared/venues/journal-vs-conference.md
+    default: conference
+    multi: false
+
+  venue:
+    detect: |
+      Decide after venue_kind and before paper_type. For venue_kind=conference,
+      select a modeled conference venue when the user explicitly names one;
+      otherwise use generic with generic_article.tex and a soft 6-8 main-text-page
+      drafting budget. For venue_kind=journal, name the modeled card (jmlr,
+      tpami, nature, nature-communications) or fall back to journal
+      (journal-generic) for any journal not individually modeled, then verify
+      its fields against the target journal.
+      Ask about venue at most once in the whole workflow. Do not ask before
+      Writing Policy when merely unspecified; unspecified means conference +
+      generic.
+    values:
+      generic: ../../_shared/venues/index.md
+      # Conferences
+      iclr: ../../_shared/venues/iclr.md
+      neurips: ../../_shared/venues/neurips.md
+      icml: ../../_shared/venues/icml.md
+      acl: ../../_shared/venues/acl.md
+      emnlp: ../../_shared/venues/emnlp.md
+      naacl: ../../_shared/venues/naacl.md
+      cvpr: ../../_shared/venues/cvpr.md
+      iccv-eccv: ../../_shared/venues/iccv-eccv.md
+      aaai: ../../_shared/venues/aaai-ijcai.md
+      ijcai: ../../_shared/venues/aaai-ijcai.md
+      kdd: ../../_shared/venues/kdd-www-sigir.md
+      www: ../../_shared/venues/kdd-www-sigir.md
+      sigir: ../../_shared/venues/kdd-www-sigir.md
+      chi-uist: ../../_shared/venues/chi-uist.md
+      # Journals
+      jmlr: ../../_shared/venues/jmlr.md
+      tpami: ../../_shared/venues/ieee-tpami.md
+      ieee-tpami: ../../_shared/venues/ieee-tpami.md
+      nature: ../../_shared/venues/nature.md
+      nature-communications: ../../_shared/venues/nature-communications.md
+      journal: ../../_shared/venues/journal-generic.md
+    default: generic
+    multi: false
+
+  paper_type:
+    detect: |
+      Decide only after venue_kind and venue. Infer from workspace evidence
+      during Writing Policy stage, then select from the family chosen by
+      venue_kind. If venue_kind=conference, check ../../_shared/paper-types/index.md
+      and choose one of the conference values. If venue_kind=journal, check
+      ../../_shared/paper-types/journal/index.md and choose one of the journal-*
+      values. Use generic for unknown conference papers and journal-generic for
+      unknown journal papers. Do not use method or journal-method as a global
+      default. Conference and journal paper types are not shared.
+    values:
+      # Conference paper types (Venue Kind: conference)
+      method: ../../_shared/paper-types/method-paper.md
+      benchmark-dataset: ../../_shared/paper-types/benchmark-dataset-paper.md
+      survey: ../../_shared/paper-types/survey-paper.md
+      systems-implementation: ../../_shared/paper-types/systems-implementation-paper.md
+      imrad: ../../_shared/paper-types/imrad-paper.md
+      generic: ../../_shared/paper-types/generic-paper.md
+      # Journal paper types (Venue Kind: journal)
+      journal-theory: ../../_shared/paper-types/journal/theory-paper.md
+      journal-method: ../../_shared/paper-types/journal/method-scaling-paper.md
+      journal-systems-tools: ../../_shared/paper-types/journal/systems-tools-paper.md
+      journal-evaluation: ../../_shared/paper-types/journal/evaluation-benchmark-paper.md
+      journal-dataset: ../../_shared/paper-types/journal/dataset-benchmark-paper.md
+      journal-application: ../../_shared/paper-types/journal/application-paper.md
+      journal-survey: ../../_shared/paper-types/journal/survey-paper.md
+      journal-position: ../../_shared/paper-types/journal/position-governance-paper.md
+      journal-generic: ../../_shared/paper-types/journal/generic-paper.md
+    default: generic
+    multi: false
+
+# Full-draft stage fragments: the orchestrator (static/workflow/full-draft.md)
+# loads each as its stage is reached.
+stages:
+  - condition: "Writing Policy stage"
+    path: static/workflow/stages/writing-policy.md
+  - condition: "Paper Framework stage (after Writing Policy confirmed)"
+    path: static/workflow/stages/paper-framework.md
+  - condition: "Full Draft LaTeX project setup (after Paper Framework confirmed)"
+    path: static/workflow/stages/latex-project.md
+  - condition: "Per-section drafting loop"
+    path: static/workflow/stages/section-drafting.md
+
+# Sibling skills this hub delegates to (load their SKILL.md when the stage needs them).
+delegates:
+  - skill: academic-figure
+    path: ../academic-figure/SKILL.md
+    when: "any figure or table is planned, generated, inserted, or QA'd"
+  - skill: academic-citation
+    path: ../academic-citation/SKILL.md
+    when: "any citation must be searched, written, or verified, or the bibliography audited"
+  - skill: academic-review
+    path: ../academic-review/SKILL.md
+    when: "the first complete paper/ draft exists — closing review, static audits, submission readiness"
+
+references:
+  on_demand:
+    # Section guides (loaded during section drafting)
+    - condition: "drafting or revising Abstract"
+      path: references/sections/abstract.md
+    - condition: "drafting or revising Introduction"
+      path: references/sections/introduction.md
+    - condition: "drafting or revising Related Work"
+      path: references/sections/related-work.md
+    - condition: "drafting or revising Method / System"
+      path: references/sections/method.md
+    - condition: "drafting or revising Experiments / Evaluation"
+      path: references/sections/experiments.md
+    - condition: "drafting or revising Conclusion / Limitations"
+      path: references/sections/conclusion.md
+    - condition: "drafting or revising Appendix / Supplement material"
+      path: references/sections/appendix.md
+    - condition: "paragraph flow diagnosis or section-level revision"
+      path: references/sections/paragraph-flow.md
+
+    # Journal section overlays (Venue Kind: journal). Load the base section guide
+    # above first, then layer the matching overlay; the overlay states only the
+    # journal-specific deltas and does not replace the base.
+    - condition: "Venue Kind is journal AND the journal section overlay mechanism is needed (load before the first overlay)"
+      path: references/sections/journal/index.md
+    - condition: "Venue Kind is journal AND drafting or revising Abstract (overlay on references/sections/abstract.md)"
+      path: references/sections/journal/abstract.md
+    - condition: "Venue Kind is journal AND drafting or revising Introduction (overlay on references/sections/introduction.md)"
+      path: references/sections/journal/introduction.md
+    - condition: "Venue Kind is journal AND drafting or revising Method / System (overlay on references/sections/method.md)"
+      path: references/sections/journal/method.md
+    - condition: "Venue Kind is journal AND drafting or revising Results / Experiments / Evaluation (overlay on references/sections/experiments.md)"
+      path: references/sections/journal/results.md
+    - condition: "Venue Kind is journal AND drafting or revising Discussion / Conclusion (overlay on references/sections/conclusion.md)"
+      path: references/sections/journal/discussion.md
+
+    # Section examples (loaded only when structure is uncertain or user asks)
+    - condition: "Abstract structure is uncertain or user asks for examples"
+      path: references/sections/examples/abstract-examples.md
+    - condition: "Introduction structure is uncertain or user asks for examples"
+      path: references/sections/examples/introduction-examples.md
+    - condition: "Method structure is uncertain or user asks for examples"
+      path: references/sections/examples/method-examples.md
+
+    # Check references
+    - condition: "Writing Policy stage workspace logic/evidence audit (trace-to-artifact, cross-file consistency, result-to-conclusion logic, scope/integrity smells, independent recheck)"
+      path: references/checks/workspace-logic-audit.md
+    - condition: "claim-evidence audit or high-risk central claim (shared rubric)"
+      path: ../../_shared/checks/claim-evidence.md
+    - condition: "metric design audit for experiments (shared rubric)"
+      path: ../../_shared/checks/metric-design.md
+
+    # Style references
+    - condition: "drafting or polishing English prose (sentence/paragraph/abstract/section): apply the copyediting and language standard while writing, and verify its mechanical subset in final review"
+      path: references/style/copyediting-standard.md
+
+    # Principles
+    - condition: "Writing Policy generation"
+      path: references/principles/research-strategy.md
+
+    # Journal drafting posture (load when the confirmed venue is a journal)
+    - condition: "confirmed venue is a journal (Venue Kind: journal); journal vs conference drafting posture, length, blinding, revision cycle, supplementary, extension"
+      path: ../../_shared/venues/journal-vs-conference.md
+    - condition: "journal paper-type selection when Venue Kind is journal"
+      path: ../../_shared/paper-types/journal/index.md
+
+    # Templates (shared)
+    - condition: "template selection for LaTeX project"
+      path: ../../_shared/templates/index.md

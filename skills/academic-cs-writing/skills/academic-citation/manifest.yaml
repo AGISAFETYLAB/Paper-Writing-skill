@@ -1,0 +1,38 @@
+name: academic-citation
+version: 3.1.0
+description: >
+  Declarative manifest for the academic-citation skill. SKILL.md loads the citation
+  workflow fragment, selects the search/verify/audit workflow axis, loads source
+  routing and citation-integrity references on demand, and runs the blocking
+  bibliography audit. Cross-skill stance lives at ../../_shared/core. Part of the
+  academic-writing collection.
+
+always_load:
+  - ../../_shared/core/stance.md
+  - static/citation-workflow.md
+
+axes:
+  workflow:
+    detect: |
+      Map the user's citation need to one or more workflows.
+        search — find verified support for a concrete claim or missing citation
+        verify — check an existing citation, BibTeX entry, or citation context
+        audit  — run the static bibliography audit before returning a draft
+      Combined requests may load multiple values, e.g. search then audit.
+    values:
+      search: references/search/source-routing.md
+      verify: references/checks/citation-integrity.md
+      audit: static/citation-workflow.md
+    multi: true
+
+references:
+  on_demand:
+    - condition: "searching for sources, choosing DBLP/CrossRef/arXiv/Semantic Scholar/OpenAlex/PubMed, or handling lookup fallback"
+      path: references/search/source-routing.md
+    - condition: "searching for, writing, or verifying a citation; citation integrity check"
+      path: references/checks/citation-integrity.md
+
+scripts:
+  - condition: "blocking bibliography audit before a draft is returned"
+    path: scripts/audit_citations.py
+    usage: "python3 <skill>/scripts/audit_citations.py paper [--min-citations <floor>]"

@@ -1,0 +1,69 @@
+% AEA-style finance/economics journal manuscript shell.
+% Compile-ready review artifact; not an official journal class file.
+% target_page_window: 35-45 pages
+% source_type: official_recommendation_plus_fallback_minimum
+% count_scope: manuscript including figures, tables, references, and appendices
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{url}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage[round,authoryear]{natbib}
+
+\onehalfspacing
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{Finance Journal Submission Title}
+\author{Author One\\Institution One \and Author Two\\Institution Two}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Replace with an abstract that states the economic question, setting, data, identification or model,
+main estimate, economic magnitude, uncertainty, and contribution. Avoid investment-advice language.
+\end{abstract}
+
+\noindent\textbf{JEL Codes:} G12; G14; C58\\
+\textbf{Keywords:} keyword 1; keyword 2; keyword 3
+
+\section{Introduction}
+
+\section{Institutional Setting and Data}
+
+\section{Empirical Design}
+
+\section{Main Results}
+
+\section{Robustness and Mechanisms}
+
+\section{Conclusion}
+
+\section*{Data and Code Availability}
+Replace with data sources, access restrictions, code repository or replication package plan, software
+versions, and online appendix mapping.
+
+\section*{Disclosures}
+Replace with funding, conflicts, IRB/registration if applicable, and author disclosure text.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+\appendix
+\section{Online Appendix}
+
+\end{document}

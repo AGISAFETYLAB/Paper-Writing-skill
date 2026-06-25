@@ -1,0 +1,77 @@
+% JMLR Paper Template
+% Local academic-writing template wrapper
+% Style file: jmlr2e.sty (official JMLR style, CC-BY; do not modify jmlr2e.sty)
+% For Journal of Machine Learning Research (single-column, no hard page limit).
+%
+% Replace the placeholder section inputs below with the confirmed Paper Framework
+% section list before drafting. JMLR is NOT anonymous; fill author/editor blocks.
+
+\documentclass[twoside,11pt]{article}
+
+% jmlr2e.sty already loads epsfig, amssymb, natbib, graphicx, hyperref, and
+% defines proof/example/theorem/lemma/etc. Load extra packages AFTER it.
+\usepackage{jmlr2e}
+
+% Additional packages (after jmlr2e)
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{xcolor}
+% cleveref must be loaded after hyperref (hyperref is loaded by jmlr2e)
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% Shared math commands
+\input{math_commands}
+
+% Heading: {volume}{year}{pages}{date submitted}{date published}{paper id}{author-full-names}
+% Values are assigned by the editor; use placeholders until then.
+\usepackage{lastpage}
+\jmlrheading{XX}{2026}{1-\pageref{LastPage}}{X/26}{X/26}{26-XXXX}{Author One and Author Two}
+
+% Short running headings: {short title}{short authors}
+\ShortHeadings{Short Title}{Author et al.}
+\firstpageno{1}
+
+\begin{document}
+
+\title{Paper Title Here}
+
+% JMLR is single-blind: fill in real author and editor information.
+\author{\name Author One \email author-one@example.com \\
+        \addr Department, Institution, City, Country
+        \AND
+        \name Author Two \email author-two@example.com \\
+        \addr Department, Institution, City, Country}
+
+\editor{Action Editor Name}
+
+\maketitle
+
+\begin{abstract}%
+\input{sections/0_abstract}
+\end{abstract}
+
+\begin{keywords}
+  keyword one, keyword two, keyword three
+\end{keywords}
+
+\input{sections/1_introduction}
+\input{sections/2_related_work}
+\input{sections/3_method}
+\input{sections/4_experiments}
+\input{sections/5_conclusion}
+
+% Acknowledgments and Disclosure of Funding (required disclosure macro)
+\acks{Acknowledgments and funding disclosure here.}
+
+\vskip 0.2in
+\bibliography{references}
+
+% JMLR recommends placing the appendix at the very end, in the same PDF.
+\appendix
+\input{sections/A_appendix}
+
+\end{document}

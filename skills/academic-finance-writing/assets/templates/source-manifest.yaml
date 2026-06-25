@@ -1,0 +1,38 @@
+templates:
+  - local_path: generic_finance_working_paper.tex
+    source_type: package_local_shell
+    source_status: package-local compile-ready shell, not an official journal class
+    official_source_url: https://afajof.org/submissions/
+    official_source_role: guideline_anchor_not_template
+    checked: 2026-06-22
+    use: unspecified finance working paper, seminar draft, or neutral compiled PDF
+    target_page_window: 40-60 pages
+    page_window_source_type: field_convention_fallback
+    count_scope: main PDF including references, tables, figures, and internal appendix
+  - local_path: aea_journal_submission.tex
+    source_type: package_local_shell
+    source_status: package-local AEA-style shell, not an official AEA class
+    official_source_url: https://www.aeaweb.org/journals/policies
+    official_source_role: policy_anchor_not_template
+    checked: 2026-06-22
+    use: finance/economics journal draft with abstract, JEL, data-code statement, and online appendix
+    target_page_window: 35-45 pages
+    page_window_source_type: official_recommendation_plus_fallback_minimum
+    count_scope: manuscript including figures, tables, references, and appendices
+  - local_path: elsevier-elsarticle/
+    source_type: official_template_package
+    source_status: official Elsevier elsarticle template package downloaded from Elsevier
+    official_source_url: https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip
+    official_source_role: template_package
+    checked: 2026-06-22
+    use: JFE-style Elsevier accepted-paper or source-file production when appropriate
+    target_page_window: 40-55 pages unless current target source says otherwise
+    page_window_source_type: field_convention_fallback
+    count_scope: main manuscript PDF, with online appendix recorded separately when clearly marked
+  - local_path: _shared/venues/standards/
+    source_type: official_guideline
+    source_status: official-source venue cards and guideline anchors, not templates
+    official_source_url: _shared/venues/standards/index.md
+    official_source_role: venue_guideline_collection
+    checked: 2026-06-22
+    use: target-specific initial-submission, conference, working-paper, and platform checks

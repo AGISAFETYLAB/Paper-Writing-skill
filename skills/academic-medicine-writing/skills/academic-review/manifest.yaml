@@ -1,0 +1,46 @@
+name: academic-review
+version: 1.0.0
+always_load:
+  - references/review.md
+  - ../../_shared/checks/research-veto.md
+  - references/checks/review-qc.md
+  - ../../_shared/core/package-gates.md
+  - ../../_shared/checks/reliability.md
+  - ../../_shared/checks/claim-verification.md
+  - ../../_shared/core/output-format.md
+axes:
+  study_type:
+    detect: |
+      Use the manuscript package's selected reporting checklist. If the package lacks a selected
+      checklist, infer from study design only when unambiguous; otherwise mark review confidence as
+      limited and ask for the study type.
+    values:
+      consort-rct: ../../_shared/checklists/consort-rct.md
+      spirit-protocol: ../../_shared/checklists/spirit-protocol.md
+      strobe-observational: ../../_shared/checklists/strobe-observational.md
+      prisma-review: ../../_shared/checklists/prisma-review.md
+      stard-diagnostic: ../../_shared/checklists/stard-diagnostic.md
+      tripod-prediction: ../../_shared/checklists/tripod-prediction.md
+      care-case-report: ../../_shared/checklists/care-case-report.md
+      gather-global-health: ../../_shared/checklists/gather-global-health.md
+      cheers-health-economics: ../../_shared/checklists/cheers-health-economics.md
+    multi: false
+references:
+  on_demand:
+    - condition: "statements or submission package audit"
+      path: ../../_shared/submission/statements.md
+    - condition: "data/code availability, repository route, FAIR metadata, or restricted data audit"
+      path: ../../_shared/submission/data-availability.md
+    - condition: "target journal or article type"
+      path: ../../_shared/submission/venues.md
+    - condition: "study-type checklist compliance"
+      path: ../../_shared/checklists/items/index.md
+    - condition: "compiled layout QA, LaTeX table aesthetics audit, table-page contact sheet, overfull boxes, float too large warnings, or right-side table underfill"
+      path: ../academic-figure/scripts/inspect_compiled_layout.py
+    - condition: "aggregate paper package gate, workflow-state.json validation, or final PASS/BLOCKED consistency"
+      path: ../../_shared/core/package-gates.md
+tools:
+  - path: ../academic-figure/scripts/inspect_compiled_layout.py
+    usage: "python3 <skill>/scripts/inspect_compiled_layout.py paper --pages tables --out-dir paper/layout-qa"
+  - path: scripts/audit_submission_package.py
+    usage: "python scripts/audit_submission_package.py paper"

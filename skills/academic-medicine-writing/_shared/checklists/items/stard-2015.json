@@ -1,0 +1,568 @@
+{
+  "checklist": "STARD",
+  "version": "2015-official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/stard/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/stard/",
+  "items": [
+    {
+      "item_id": "STARD-01",
+      "item": "title_abstract",
+      "target_section": "Title/Abstract",
+      "required_evidence": [
+        "diagnostic accuracy label",
+        "structured summary"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-02",
+      "item": "abstract_summary",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "participants",
+        "index test",
+        "reference standard",
+        "accuracy estimates"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-03",
+      "item": "scientific_background",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "clinical background",
+        "intended use"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-04",
+      "item": "objectives_hypotheses",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "study objectives or hypotheses"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-05",
+      "item": "study_design",
+      "target_section": "Methods",
+      "required_evidence": [
+        "prospective/retrospective design",
+        "sampling design"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-06",
+      "item": "eligibility",
+      "target_section": "Methods",
+      "required_evidence": [
+        "eligibility criteria",
+        "setting",
+        "locations"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-07",
+      "item": "participant_basis",
+      "target_section": "Methods",
+      "required_evidence": [
+        "participant identification basis",
+        "symptoms/results/prior testing"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-08",
+      "item": "recruitment",
+      "target_section": "Methods",
+      "required_evidence": [
+        "where/how/when participants recruited"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-09",
+      "item": "sampling",
+      "target_section": "Methods",
+      "required_evidence": [
+        "consecutive/random/convenience sampling"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-10",
+      "item": "index_test_reference_standard",
+      "target_section": "Methods",
+      "required_evidence": [
+        "index test details",
+        "reference standard details",
+        "rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-11",
+      "item": "test_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "technical specifications",
+        "materials",
+        "units",
+        "cutoffs"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-12",
+      "item": "test_performers",
+      "target_section": "Methods",
+      "required_evidence": [
+        "who performed/read tests",
+        "training/expertise"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-13",
+      "item": "blinding",
+      "target_section": "Methods",
+      "required_evidence": [
+        "whether readers knew clinical data or other test results"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-14",
+      "item": "diagnostic_thresholds",
+      "target_section": "Methods",
+      "required_evidence": [
+        "threshold definition",
+        "prespecified/exploratory status"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-15",
+      "item": "sample_size",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sample-size rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-16",
+      "item": "accuracy_measures",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sensitivity/specificity or other metrics",
+        "uncertainty"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-17",
+      "item": "indeterminate_missing",
+      "target_section": "Methods",
+      "required_evidence": [
+        "handling indeterminate, missing, or outlier results"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-18",
+      "item": "variability_analyses",
+      "target_section": "Methods",
+      "required_evidence": [
+        "reproducibility or variability analyses if performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-19",
+      "item": "participant_flow",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "participant flow",
+        "numbers by stage"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-20",
+      "item": "baseline_characteristics",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "demographic/clinical characteristics"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-21",
+      "item": "time_interval",
+      "target_section": "Results",
+      "required_evidence": [
+        "interval between index test and reference standard"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-22",
+      "item": "reference_standard_distribution",
+      "target_section": "Results",
+      "required_evidence": [
+        "target condition distribution/severity"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-23",
+      "item": "cross_tabulation",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "2x2 table or cross-tabulation"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-24",
+      "item": "accuracy_estimates",
+      "target_section": "Results",
+      "required_evidence": [
+        "diagnostic accuracy estimates with uncertainty"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-25",
+      "item": "adverse_events",
+      "target_section": "Results",
+      "required_evidence": [
+        "adverse events from index test or reference standard"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-26",
+      "item": "limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "sources of bias",
+        "statistical uncertainty",
+        "generalizability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-27",
+      "item": "implications",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "intended use and clinical implications bounded by data"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-28",
+      "item": "registration",
+      "target_section": "Statements",
+      "required_evidence": [
+        "registration number/name if available"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-29",
+      "item": "protocol",
+      "target_section": "Statements",
+      "required_evidence": [
+        "protocol availability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STARD-30",
+      "item": "funding",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funding source and funder role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

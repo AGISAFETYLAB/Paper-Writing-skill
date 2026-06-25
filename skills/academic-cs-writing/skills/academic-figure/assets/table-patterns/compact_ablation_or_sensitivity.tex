@@ -1,0 +1,27 @@
+% Reusable table skeleton. Replace component names, values, caption, and label
+% with source-backed paper content. Requires booktabs, amssymb, and xcolor[table].
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableFocusTint}{HTML}{F2F6FB}
+\begin{table}[t]
+\centering
+\caption{Compact ablation or sensitivity summary.}
+\label{tab:compact-ablation-or-sensitivity}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lccc rr@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Variant} & \textbf{Module A} & \textbf{Module B} & \textbf{Guard} &
+\textbf{Score $\uparrow$} & \textbf{Cost $\downarrow$} \\
+\midrule
+Base pipeline & -- & -- & -- & 61.8 & 1.00 \\
++ Module A & $\checkmark$ & -- & -- & 66.5 & 1.04 \\
++ Module B & $\checkmark$ & $\checkmark$ & -- & 70.2 & 1.08 \\
+\midrule
+\rowcolor{TableFocusTint}
+\textbf{Full system} & $\checkmark$ & $\checkmark$ & $\checkmark$ &
+\textbf{74.9} & \textbf{1.11} \\
+\bottomrule
+\end{tabular}
+\end{table}

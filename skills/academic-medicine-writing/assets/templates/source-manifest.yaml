@@ -1,0 +1,81 @@
+templates:
+  - local_path: assets/templates/word/generic-medical-word-reference.docx
+    source_status: package-local generic Word reference shell, not an official Word template
+    source_note: package-local generic DOCX shell derived from a minimal valid OOXML structure; manuscript body text is replaced by the renderer
+    sha256: 46d0b7b38d9c1836dcaee1506cebcdbd499d79bea3a9f91b7257107b34d5645e
+    checked: 2026-06-18
+    use: fallback reference DOCX for Word-first medical manuscript generation when no valid official or user-provided Word template is available
+    target_length_budget: use selected journal standard card; if none exists, use Generic Medical Length Fallbacks from _shared/submission/templates.md
+  - local_path: assets/templates/word/bmj-case-reports/bmj-clinical-case-report-template.docx
+    source_status: official Word template downloaded from BMJ Case Reports
+    official_source_url: https://casereports.bmj.com/pages/authors
+    download_url: https://casereports.bmj.com/casereports/wp-content/uploads/sites/64/2023/06/Clinical-Case-Report-template-2023-word.docx
+    sha256: d905dca4c88d65b6c11b9a40855153509dc5ce7d92412c9af16ad295cb489f40
+    checked: 2026-06-18
+    use: BMJ Case Reports clinical case report Word-first template
+    target_length_budget: clinical_case_report from _shared/journal-standards/bmj-case-reports.md; 1200-2000 main words plus 150-word summary
+  - local_path: assets/templates/word/bmj-case-reports/bmj-global-health-case-report-template.docx
+    source_status: official Word template downloaded from BMJ Case Reports
+    official_source_url: https://casereports.bmj.com/pages/authors
+    download_url: https://casereports.bmj.com/casereports/wp-content/uploads/sites/64/2023/06/Global-Health-Case-Report-template-2023-word.docx
+    sha256: c3d85785aec8a89d36c8485c6534b6965101aba53aaba7595034bd8eb0e0c00b
+    checked: 2026-06-18
+    use: BMJ Case Reports global health case report Word-first template
+    target_length_budget: global_health_case_report from _shared/journal-standards/bmj-case-reports.md; 1200-2000 main words plus 150-word summary
+  - local_path: assets/templates/word/bmj-case-reports/bmj-images-in-template.docx
+    source_status: official Word template downloaded from BMJ Case Reports
+    official_source_url: https://casereports.bmj.com/pages/authors
+    download_url: https://casereports.bmj.com/casereports/wp-content/uploads/sites/64/2023/06/Images-in-template-2023-word.docx
+    sha256: b50139496f2d44a104d593099b42f700a6d340bd1f17f1819bd823a5474d1a35
+    checked: 2026-06-18
+    use: BMJ Case Reports Images In Word-first template
+    target_length_budget: images_in from _shared/journal-standards/bmj-case-reports.md; 350-500 words
+  - local_path: cover_letter_template.md
+    source_status: package-local cover letter shell, not a journal-specific official form
+    official_source_url: https://www.icmje.org/recommendations/browse/manuscript-preparation/sending-the-submission.html
+    checked: 2026-06-18
+    use: editor-facing cover-letter.md drafting when the target journal is named and author-supplied metadata are available
+  - local_path: generic_medical_article.tex
+    source_status: package-local compile-ready shell, not an official journal class
+    official_source_url: https://www.icmje.org/recommendations/
+    checked: 2026-06-16
+    use: unspecified medical journal, early review draft, or optional neutral PDF preview
+    target_length_budget: use Generic Medical Length Fallbacks from _shared/submission/templates.md; original research default 2500-3500 main words or 8-12 review pages
+  - local_path: jama_original_investigation.tex
+    source_status: package-local JAMA-style shell derived from official author-instruction constraints, not an official JAMA class
+    official_source_url: https://jamanetwork.com/journals/jamanetworkopen/pages/instructions-for-authors
+    checked: 2026-06-16
+    use: optional JAMA-style review artifact with Key Points, article information, statements, and checklist appendix; not the primary Word-first submission template
+    target_length_budget: JAMA Original Investigation journal-standard budget; 2500-3000 main words, 5 display items, 50-75 references
+  - local_path: springer-nature-latex/sn-article-template/sn-article.tex
+    source_status: official downloaded template package
+    official_source_url: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+    download_url: https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12
+    checked: 2026-06-16
+    use: Springer Nature LaTeX authoring template for Nature Portfolio / Springer Nature journal article submissions; choose single-column or iicol two-column layout according to confirmed journal/user need
+    target_length_budget: use selected Nature/Springer content-type card; Nature Medicine Article/Resource/Analysis default to 3200-4000 main words and 6 displays
+  - local_path: springer-nature-latex/sn-article-template/sn-jnl.cls
+    source_status: official downloaded template package companion class
+    official_source_url: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+    checked: 2026-06-16
+    use: Springer Nature journal article class companion for sn-article.tex
+  - local_path: springer-nature-latex/sn-article-template/sn-bibliography.bib
+    source_status: official downloaded template package companion bibliography sample
+    official_source_url: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+    checked: 2026-06-16
+    use: Springer Nature template bibliography sample and bibliography command reference
+  - local_path: _shared/checklists/
+    source_status: checklist routing cards based on EQUATOR-linked reporting guidelines
+    official_source_url: https://www.equator-network.org/reporting-guidelines/
+    checked: 2026-06-16
+    use: study-type checklist selection and compliance matrix
+  - local_path: _shared/journal-standards/nature-medicine-initial-submission.md
+    source_status: official initial-formatting source card, no bundled class file
+    official_source_url: https://www.nature.com/nm/submission-guidelines/initial-formatting
+    checked: 2026-06-16
+    use: Nature Medicine initial submission PDF/source expectations
+  - local_path: _shared/journal-standards/bmj-case-reports.md
+    source_status: official author-page and official Word-template article-type length card
+    official_source_url: https://casereports.bmj.com/pages/authors
+    checked: 2026-06-23
+    use: BMJ Case Reports target_length_budget for clinical case report, global health case report, and Images In routes

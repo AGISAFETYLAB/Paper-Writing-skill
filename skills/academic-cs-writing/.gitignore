@@ -1,0 +1,10 @@
+# Local-only files: isolated under _local/, kept out of the shipped collection
+# (unbundled domain adapters, style profiles, maintenance provenance notes)
+_local/
+
+# Self-check doc, kept local
+SKILL-FLOW.md
+
+# Python cache
+**/__pycache__/
+*.pyc

@@ -1,0 +1,27 @@
+% Reusable table skeleton. Replace group labels, values, caption, and label
+% with source-backed paper content. Requires booktabs, xcolor[table], and array.
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableGroupText}{HTML}{374151}
+\begin{table}[t]
+\centering
+\caption{Matched-condition comparison. Parenthesized deltas are relative to each base row.}
+\label{tab:matched-condition-delta}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Condition} & \textbf{N} & \textbf{Err. $\downarrow$ ($\Delta$)} &
+\textbf{Succ. $\uparrow$ ($\Delta$)} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{\textcolor{TableGroupText}{Intervention: setting family 1}}} \\
+Base & 120 & 29.4 (--) & 54.2 (--) \\
++ Variant & 119 & 20.8 (-8.6) & 61.3 (+7.1) \\
+\addlinespace[1pt]
+\multicolumn{4}{@{}l}{\textit{\textcolor{TableGroupText}{Intervention: setting family 2}}} \\
+Default & 118 & 26.7 (--) & 57.6 (--) \\
+Alternative & 116 & 18.1 (-8.6) & 64.7 (+7.1) \\
+\bottomrule
+\end{tabular}
+\end{table}

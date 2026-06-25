@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=7.6in,paperheight=4.15in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Benchmark Taxonomy Or Protocol Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Define codes, phases, protocol attributes, or taxonomy rows.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Benchmark taxonomy and protocol summary.}
+\label{tab:taxonomy-protocol}
+\small
+\begin{tabularx}{\linewidth}{@{}L{0.16\linewidth}L{0.16\linewidth}Y r@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Axis} & \textbf{Code} & \textbf{Reader-facing definition} & \textbf{Count} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{\textcolor{GroupText}{Input channel}}} \\
+Channel & C1 & Instruction appears in user-visible content and competes with the task goal. & 38 \\
+Channel & C2 & Instruction is carried through a tool result, notification, or retrieved context. & 27 \\
+\addlinespace[1pt]
+\multicolumn{4}{@{}l}{\textit{\textcolor{GroupText}{Outcome target}}} \\
+Target & T1 & The outcome changes an external state or sends information outside the task. & 31 \\
+Target & T2 & The outcome degrades task completion without executing the target action. & 19 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: tabularx with a prose definition column; group rows prevent repeated long labels.}}
+\end{document}

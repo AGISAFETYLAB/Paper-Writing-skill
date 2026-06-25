@@ -1,0 +1,33 @@
+name: academic-citation
+version: 1.0.0
+always_load:
+  - references/citation.md
+axes:
+  study_type:
+    detect: |
+      Use the confirmed study_type/checklist when reporting guideline citations, registry records,
+      or checklist sources are needed. Ask when the citation target could belong to multiple
+      reporting frameworks.
+    values:
+      consort-rct: ../../_shared/checklists/consort-rct.md
+      spirit-protocol: ../../_shared/checklists/spirit-protocol.md
+      strobe-observational: ../../_shared/checklists/strobe-observational.md
+      prisma-review: ../../_shared/checklists/prisma-review.md
+      stard-diagnostic: ../../_shared/checklists/stard-diagnostic.md
+      tripod-prediction: ../../_shared/checklists/tripod-prediction.md
+      care-case-report: ../../_shared/checklists/care-case-report.md
+      gather-global-health: ../../_shared/checklists/gather-global-health.md
+      cheers-health-economics: ../../_shared/checklists/cheers-health-economics.md
+    multi: false
+references:
+  on_demand:
+    - condition: "ethics, consent, registration, data sharing, funding, conflicts"
+      path: ../../_shared/submission/statements.md
+    - condition: "target journal or reporting guideline citation"
+      path: ../../_shared/submission/venues.md
+    - condition: "study-type checklist citation"
+      path: ../../_shared/checklists/items/index.md
+    - condition: "PubMed/MeSH strategy, RIS/NBIB/BibTeX conversion, or multi-source search planning"
+      path: references/search-strategy.md
+    - condition: "claim-to-source verification or citation drift audit"
+      path: ../../_shared/checks/claim-verification.md

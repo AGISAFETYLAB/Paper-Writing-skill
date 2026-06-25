@@ -1,0 +1,506 @@
+{
+  "checklist": "CONSORT",
+  "version": "2025-official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/consort/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/consort/",
+  "items": [
+    {
+      "item_id": "CONSORT-01",
+      "item": "title_trial_design",
+      "target_section": "Title/Abstract",
+      "required_evidence": [
+        "randomized trial label",
+        "trial design in abstract"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-02",
+      "item": "structured_abstract",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "design",
+        "participants",
+        "interventions",
+        "objective",
+        "outcomes",
+        "randomization",
+        "results",
+        "harms",
+        "registration"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-03",
+      "item": "background_objectives",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "scientific background",
+        "specific objective or hypothesis"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-04",
+      "item": "trial_design_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "trial design",
+        "allocation ratio",
+        "framework"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-05",
+      "item": "important_design_changes",
+      "target_section": "Methods",
+      "required_evidence": [
+        "post-start design changes",
+        "reasons for changes"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-06",
+      "item": "participants_eligibility_setting",
+      "target_section": "Methods",
+      "required_evidence": [
+        "eligibility criteria",
+        "recruitment setting",
+        "data collection setting"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-07",
+      "item": "interventions",
+      "target_section": "Methods",
+      "required_evidence": [
+        "intervention details",
+        "comparator details",
+        "delivery and replication details"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-08",
+      "item": "outcomes",
+      "target_section": "Methods",
+      "required_evidence": [
+        "primary outcome",
+        "secondary outcomes",
+        "measurement timing",
+        "outcome changes"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-09",
+      "item": "sample_size",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sample-size calculation",
+        "assumptions",
+        "interim analysis or stopping rule if used"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-randomization",
+      "item": "randomization",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sequence generation method",
+        "allocation ratio",
+        "stratification or blocking if used"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-11",
+      "item": "allocation_concealment",
+      "target_section": "Methods",
+      "required_evidence": [
+        "concealment mechanism",
+        "implementation protection"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-12",
+      "item": "randomization_implementation",
+      "target_section": "Methods",
+      "required_evidence": [
+        "who generated sequence",
+        "who enrolled participants",
+        "who assigned interventions"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-13",
+      "item": "blinding",
+      "target_section": "Methods",
+      "required_evidence": [
+        "who was blinded",
+        "how blinding was maintained",
+        "similarity of interventions if applicable"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-14",
+      "item": "statistical_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "primary outcome analysis",
+        "secondary outcome analysis",
+        "adjustment methods",
+        "missing-data approach"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-15",
+      "item": "participant_flow",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "numbers randomized",
+        "numbers treated",
+        "numbers analyzed",
+        "losses/exclusions with reasons"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-16",
+      "item": "recruitment_dates_followup",
+      "target_section": "Results",
+      "required_evidence": [
+        "recruitment dates",
+        "follow-up dates",
+        "reason trial ended or stopped"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-17",
+      "item": "baseline_data",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "baseline demographic and clinical characteristics by group"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-18",
+      "item": "numbers_analyzed",
+      "target_section": "Results",
+      "required_evidence": [
+        "denominator for each analysis",
+        "analysis population"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-19",
+      "item": "outcomes_estimation",
+      "target_section": "Results",
+      "required_evidence": [
+        "effect size for each outcome",
+        "precision measure"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-20",
+      "item": "binary_absolute_relative",
+      "target_section": "Results",
+      "required_evidence": [
+        "absolute and relative effect sizes for binary outcomes when appropriate"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-21",
+      "item": "ancillary_analyses",
+      "target_section": "Results",
+      "required_evidence": [
+        "subgroup analyses",
+        "adjusted analyses",
+        "distinguish prespecified from exploratory"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-22",
+      "item": "harms",
+      "target_section": "Results",
+      "required_evidence": [
+        "adverse events",
+        "serious harms",
+        "group denominators"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-23",
+      "item": "limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "trial limitations",
+        "bias/imprecision/multiplicity considerations"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-24",
+      "item": "generalizability_interpretation",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "generalizability",
+        "balance of benefits and harms",
+        "evidence context"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CONSORT-25",
+      "item": "registration_protocol_funding",
+      "target_section": "Statements",
+      "required_evidence": [
+        "registration identifier",
+        "protocol access",
+        "funding source and funder role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

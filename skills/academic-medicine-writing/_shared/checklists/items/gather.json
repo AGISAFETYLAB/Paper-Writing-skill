@@ -1,0 +1,336 @@
+{
+  "checklist": "GATHER",
+  "version": "official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/gather/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/gather/",
+  "items": [
+    {
+      "item_id": "GATHER-01",
+      "item": "objectives_funding",
+      "target_section": "Introduction/Statements",
+      "required_evidence": [
+        "objectives",
+        "funding source"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-02",
+      "item": "data_sources",
+      "target_section": "Methods/Supplement",
+      "required_evidence": [
+        "all data sources",
+        "inclusion/exclusion criteria"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-03",
+      "item": "data_source_characteristics",
+      "target_section": "Methods/Supplement",
+      "required_evidence": [
+        "population, period, location, measurement details for each source"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-04",
+      "item": "data_processing",
+      "target_section": "Methods",
+      "required_evidence": [
+        "data cleaning, mapping, bias adjustments"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-05",
+      "item": "statistical_model",
+      "target_section": "Methods",
+      "required_evidence": [
+        "model specification",
+        "assumptions",
+        "covariates"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-06",
+      "item": "uncertainty",
+      "target_section": "Methods/Results",
+      "required_evidence": [
+        "uncertainty estimation and propagation"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-07",
+      "item": "validation",
+      "target_section": "Methods/Results",
+      "required_evidence": [
+        "model validation or out-of-sample checks"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-08",
+      "item": "results_by_population",
+      "target_section": "Results",
+      "required_evidence": [
+        "estimates by age/sex/location/time as applicable"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-09",
+      "item": "uncertainty_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "uncertainty intervals for estimates"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-10",
+      "item": "sensitivity_results",
+      "target_section": "Results/Supplement",
+      "required_evidence": [
+        "sensitivity or scenario results when performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-11",
+      "item": "data_availability",
+      "target_section": "Statements/Supplement",
+      "required_evidence": [
+        "input data availability and restrictions"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-12",
+      "item": "code_availability",
+      "target_section": "Statements/Supplement",
+      "required_evidence": [
+        "analytic code availability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-13",
+      "item": "limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "data and modeling limitations"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-14",
+      "item": "interpretation",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "interpretation in public-health context"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-15",
+      "item": "reproducibility_materials",
+      "target_section": "Supplement",
+      "required_evidence": [
+        "data dictionary, model details, parameter tables"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-16",
+      "item": "ethical_permissions",
+      "target_section": "Statements",
+      "required_evidence": [
+        "ethics/data-use permissions when relevant"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-17",
+      "item": "conflicts",
+      "target_section": "Statements",
+      "required_evidence": [
+        "competing interests"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "GATHER-18",
+      "item": "role_of_funder",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funder role in design/analysis/reporting"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

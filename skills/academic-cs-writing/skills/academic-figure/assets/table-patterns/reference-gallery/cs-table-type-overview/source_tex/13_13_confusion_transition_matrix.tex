@@ -1,0 +1,51 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=5.8in,paperheight=3.25in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Confusion Or Transition Matrix Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Present compact class-to-class counts when a heatmap is unnecessary.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Confusion matrix summary. Rows are reference labels and columns are predictions.}
+\label{tab:confusion-matrix}
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Reference} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{Total} \\
+\midrule
+A & \textbf{84} & 7 & 4 & 5 & 100 \\
+B & 9 & \textbf{71} & 13 & 7 & 100 \\
+C & 5 & 11 & \textbf{77} & 7 & 100 \\
+D & 4 & 6 & 10 & \textbf{80} & 100 \\
+\midrule
+Precision & 82.4 & 74.7 & 74.0 & 80.8 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Small numeric matrix; natural-width tabular with clear row/column labels.}}
+\end{document}

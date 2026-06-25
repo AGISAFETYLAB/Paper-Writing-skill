@@ -1,0 +1,32 @@
+% Reusable table skeleton. Replace labels, values, caption, and label with
+% source-backed paper content. Requires booktabs, array, and xcolor[table].
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableFocusTint}{HTML}{F2F6FB}
+\begin{table}[t]
+\centering
+\caption{Multi-dataset metric matrix with dataset spanners.}
+\label{tab:multi-dataset-metric-matrix}
+\scriptsize
+\setlength{\tabcolsep}{2.7pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.19\linewidth}rrrrrrrr@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Method} & \multicolumn{2}{c}{\textbf{Dataset A}} &
+\multicolumn{2}{c}{\textbf{Dataset B}} & \multicolumn{2}{c}{\textbf{Dataset C}} &
+\multicolumn{2}{c}{\textbf{Average}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(l){8-9}
+\rowcolor{TableHeaderTint}
+ & \textbf{Acc.} & \textbf{F1} & \textbf{Acc.} & \textbf{F1} &
+\textbf{Acc.} & \textbf{F1} & \textbf{Score $\uparrow$} & \textbf{ECE $\downarrow$} \\
+\midrule
+Baseline A & 78.4 & 74.1 & 73.6 & 69.8 & 71.2 & 67.5 & 72.4 & 8.9 \\
+Baseline B & 80.2 & 75.5 & 74.8 & 70.9 & 72.6 & 68.2 & 73.7 & 8.1 \\
+Baseline C & 81.5 & 76.2 & 75.1 & 71.6 & 73.3 & 69.0 & 74.5 & 7.8 \\
+\midrule
+\rowcolor{TableFocusTint}
+\textbf{Proposed system} & \textbf{84.7} & \textbf{79.6} & \textbf{78.9} &
+\textbf{74.8} & \textbf{76.4} & \textbf{72.2} & \textbf{77.8} & \textbf{6.3} \\
+\bottomrule
+\end{tabular*}
+\end{table}

@@ -1,0 +1,26 @@
+% Reusable table skeleton. Replace axes, definitions, counts, caption, and label
+% with source-backed paper content. Requires booktabs, tabularx, array, and xcolor[table].
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableGroupText}{HTML}{374151}
+\begin{table}[t]
+\centering
+\caption{Wrapped taxonomy or protocol summary.}
+\label{tab:wrapped-taxonomy-or-protocol}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.16\linewidth}>{\raggedright\arraybackslash}p{0.16\linewidth}>{\raggedright\arraybackslash}X r@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Axis} & \textbf{Code} & \textbf{Reader-facing definition} & \textbf{Count} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{\textcolor{TableGroupText}{Input channel}}} \\
+Channel & C1 & Instruction appears in user-visible content and competes with the task goal. & 38 \\
+Channel & C2 & Instruction is carried through a tool result, notification, or retrieved context. & 27 \\
+\addlinespace[1pt]
+\multicolumn{4}{@{}l}{\textit{\textcolor{TableGroupText}{Outcome target}}} \\
+Target & T1 & The outcome changes an external state or sends information outside the task. & 31 \\
+Target & T2 & The outcome degrades task completion without executing the target action. & 19 \\
+\bottomrule
+\end{tabularx}
+\end{table}

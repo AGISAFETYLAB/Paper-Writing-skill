@@ -1,0 +1,118 @@
+name: academic-medicine-writing
+version: 0.2.0
+description: >
+  Package map for the standalone medicine academic-writing package.
+
+subskills:
+  academic-writing:
+    path: skills/academic-writing/SKILL.md
+    owns: medical manuscript writing and revision orchestration
+  academic-figure:
+    path: skills/academic-figure/SKILL.md
+    owns: medical figures, tables, legends, and display QA
+  academic-citation:
+    path: skills/academic-citation/SKILL.md
+    owns: biomedical citation search, bibliography integrity, and citation audit
+  academic-review:
+    path: skills/academic-review/SKILL.md
+    owns: medical checklist, statement, and submission-readiness review
+
+shared_resources:
+  _shared:
+    - _shared/core/stance.md
+    - _shared/core/gates.md
+    - _shared/core/output-format.md
+    - _shared/core/package-gates.md
+    - _shared/checks/research-veto.md
+    - _shared/checks/reliability.md
+    - _shared/checks/claim-verification.md
+    - _shared/article-types/index.md
+    - _shared/article-types/profile-boundary.md
+    - _shared/article-types/generic-medical-article.md
+    - _shared/article-types/original-investigation.md
+    - _shared/article-types/clinical-trial.md
+    - _shared/article-types/study-protocol.md
+    - _shared/article-types/observational-study.md
+    - _shared/article-types/systematic-review.md
+    - _shared/article-types/scoping-rapid-review.md
+    - _shared/article-types/diagnostic-accuracy.md
+    - _shared/article-types/prediction-model.md
+    - _shared/article-types/case-report.md
+    - _shared/article-types/research-letter.md
+    - _shared/article-types/review-perspective.md
+    - _shared/article-types/qualitative-mixed-methods.md
+    - _shared/article-types/methods-paper.md
+    - _shared/article-types/guideline-consensus.md
+    - _shared/article-types/editorial-commentary-letter.md
+    - _shared/article-types/data-resource-paper.md
+    - _shared/article-types/health-economics.md
+    - _shared/article-types/global-health-estimates.md
+    - _shared/checklists/items/index.md
+    - _shared/submission/statements.md
+    - _shared/submission/data-availability.md
+    - _shared/submission/submission-standards.md
+    - _shared/submission/templates.md
+    - _shared/submission/venues.md
+    - _shared/submission/word-first-production.md
+    - _shared/journal-standards/jama-original-investigation.md
+    - _shared/journal-standards/nature-medicine-initial-submission.md
+    - _shared/journal-standards/bmj-case-reports.md
+  subskill_resources:
+    - skills/academic-writing/references/sections/index.md
+    - skills/academic-writing/references/sections/paragraph-flow.md
+    - skills/academic-writing/references/sections/title-abstract.md
+    - skills/academic-writing/references/sections/introduction.md
+    - skills/academic-writing/references/sections/literature-positioning.md
+    - skills/academic-writing/references/sections/methods.md
+    - skills/academic-writing/references/sections/results.md
+    - skills/academic-writing/references/sections/discussion.md
+    - skills/academic-writing/references/sections/appendix-supplement.md
+    - skills/academic-writing/references/sections/statements.md
+    - skills/academic-writing/references/examples.md
+    - skills/academic-citation/references/citation.md
+    - skills/academic-citation/references/search-strategy.md
+    - skills/academic-figure/references/figures.md
+    - skills/academic-figure/references/figure-export-qa.md
+    - skills/academic-figure/references/r-figure-workflow.md
+    - skills/academic-figure/references/r-chart-catalog.md
+    - skills/academic-figure/references/python-figure-workflow.md
+    - skills/academic-figure/references/python-chart-catalog.md
+    - skills/academic-review/references/review.md
+    - skills/academic-review/references/checks/review-qc.md
+  assets:
+    - assets/templates/index.md
+    - assets/templates/source-manifest.yaml
+    - assets/templates/word/index.md
+    - assets/templates/word/generic-medical-word-reference.docx
+    - assets/templates/word/bmj-case-reports/bmj-clinical-case-report-template.docx
+    - assets/templates/word/bmj-case-reports/bmj-global-health-case-report-template.docx
+    - assets/templates/word/bmj-case-reports/bmj-images-in-template.docx
+  scripts:
+    - tests/validate_academic_medicine_writing_skill.py
+    - tests/run_behavior_evals.py
+    - skills/academic-writing/scripts/render_medical_word_docx.py
+    - skills/academic-writing/scripts/fetch_medical_word_templates.py
+    - skills/academic-citation/scripts/audit_medical_citations.py
+    - skills/academic-citation/scripts/audit_ama_citations.py
+    - skills/academic-citation/scripts/convert_citation_file.py
+    - skills/academic-citation/scripts/format_ama_manuscript.py
+    - skills/academic-figure/scripts/validate_chart_catalog_parity.py
+    - skills/academic-figure/scripts/medical_palette.py
+    - skills/academic-figure/scripts/generate_all_display_types_demo.py
+    - skills/academic-figure/scripts/generate_updated_display_preview.py
+    - skills/academic-figure/scripts/generate_chart_type_overview.py
+    - skills/academic-figure/scripts/generate_word_single_column_display_catalog.py
+    - skills/academic-figure/scripts/audit_display_layout.py
+    - skills/academic-figure/scripts/inspect_compiled_layout.py
+    - skills/academic-review/scripts/audit_submission_package.py
+    - skills/academic-review/scripts/audit_word_docx.py
+    - skills/academic-review/scripts/audit_local_path_leaks.py
+    - skills/academic-review/scripts/audit_jama_components.py
+  tests:
+    - tests/run_evals.py
+    - tests/test_behavior_eval_and_package_gate.py
+
+runtime_boundary:
+  top_level_entry: SKILL.md
+  workflow_owner: skills/academic-writing
+  note: Top-level files route only. Workflow axes and stage sequencing live in the hub sub-skill.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing"
+  short_description: "Full paper drafting and focused draft revision"
+  default_prompt: "Use $academic-writing to write a full paper draft from a workspace or revise existing paper text."

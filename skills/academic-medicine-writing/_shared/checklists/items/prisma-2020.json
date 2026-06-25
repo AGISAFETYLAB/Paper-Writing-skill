@@ -1,0 +1,524 @@
+{
+  "checklist": "PRISMA",
+  "version": "2020-official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/prisma/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/prisma/",
+  "items": [
+    {
+      "item_id": "PRISMA-01",
+      "item": "title_review_type",
+      "target_section": "Title",
+      "required_evidence": [
+        "systematic review or meta-analysis label"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-02",
+      "item": "abstract",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "structured summary of rationale, objectives, eligibility, methods, results, limitations, registration"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-03",
+      "item": "rationale",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "rationale in existing evidence context"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-04",
+      "item": "objectives",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "explicit review question",
+        "PICOS/PECO elements"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-05",
+      "item": "eligibility_criteria",
+      "target_section": "Methods",
+      "required_evidence": [
+        "inclusion/exclusion criteria",
+        "grouping for syntheses"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-06",
+      "item": "information_sources",
+      "target_section": "Methods",
+      "required_evidence": [
+        "databases/registers/websites",
+        "last search date"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-07",
+      "item": "search_strategy",
+      "target_section": "Methods/Supplement",
+      "required_evidence": [
+        "full search strategy for every source"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-08",
+      "item": "selection_process",
+      "target_section": "Methods",
+      "required_evidence": [
+        "screening process",
+        "reviewers",
+        "conflict resolution"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-09",
+      "item": "data_collection",
+      "target_section": "Methods",
+      "required_evidence": [
+        "data extraction process",
+        "reviewers",
+        "automation if used"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-10",
+      "item": "data_items",
+      "target_section": "Methods",
+      "required_evidence": [
+        "outcomes sought",
+        "other extracted variables",
+        "assumption rules"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-11",
+      "item": "risk_of_bias_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "risk-of-bias tool",
+        "reviewers",
+        "assessment process"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-12",
+      "item": "effect_measures",
+      "target_section": "Methods",
+      "required_evidence": [
+        "effect measures for each outcome"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-13",
+      "item": "synthesis_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "eligibility for synthesis",
+        "data preparation",
+        "model choice",
+        "heterogeneity exploration",
+        "sensitivity analyses"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-14",
+      "item": "reporting_bias_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "publication/reporting bias assessment methods"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-15",
+      "item": "certainty_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "certainty or confidence assessment method"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-16",
+      "item": "study_selection_results",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "records identified",
+        "screened",
+        "excluded",
+        "included",
+        "flow diagram"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-17",
+      "item": "study_characteristics",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "characteristics of included studies"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-18",
+      "item": "risk_of_bias_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "risk-of-bias result for included studies"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-19",
+      "item": "individual_study_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "results for each study and outcome"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-20",
+      "item": "synthesis_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "synthesis results",
+        "effect estimates",
+        "heterogeneity",
+        "subgroups/sensitivity"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-21",
+      "item": "reporting_bias_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "reporting bias assessment results"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-22",
+      "item": "certainty_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "certainty/confidence results"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-23",
+      "item": "discussion",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "interpretation",
+        "limitations of evidence",
+        "limitations of review process",
+        "implications"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-24",
+      "item": "registration_protocol",
+      "target_section": "Statements",
+      "required_evidence": [
+        "registration information",
+        "protocol access",
+        "amendments"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-25",
+      "item": "support",
+      "target_section": "Statements",
+      "required_evidence": [
+        "financial or nonfinancial support",
+        "funder role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-26",
+      "item": "competing_interests",
+      "target_section": "Statements",
+      "required_evidence": [
+        "competing interests"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "PRISMA-27",
+      "item": "data_code_materials",
+      "target_section": "Statements",
+      "required_evidence": [
+        "data availability",
+        "code availability",
+        "materials/templates availability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

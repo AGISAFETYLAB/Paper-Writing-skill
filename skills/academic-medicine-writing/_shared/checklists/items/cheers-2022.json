@@ -1,0 +1,536 @@
+{
+  "checklist": "CHEERS",
+  "version": "2022-official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/cheers/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/cheers/",
+  "items": [
+    {
+      "item_id": "CHEERS-01",
+      "item": "title",
+      "target_section": "Title",
+      "required_evidence": [
+        "economic evaluation type",
+        "interventions compared"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-02",
+      "item": "abstract",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "context",
+        "methods",
+        "results",
+        "uncertainty",
+        "conclusion"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-03",
+      "item": "context_objectives",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "decision context",
+        "study question"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-04",
+      "item": "health_economic_plan",
+      "target_section": "Methods",
+      "required_evidence": [
+        "whether analysis plan/protocol exists"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-05",
+      "item": "study_population",
+      "target_section": "Methods",
+      "required_evidence": [
+        "population characteristics and subgroup scope"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-06",
+      "item": "setting_location",
+      "target_section": "Methods",
+      "required_evidence": [
+        "setting and location relevant to costs/outcomes"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-07",
+      "item": "comparators",
+      "target_section": "Methods",
+      "required_evidence": [
+        "interventions and comparators",
+        "rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-08",
+      "item": "perspective",
+      "target_section": "Methods",
+      "required_evidence": [
+        "analytic perspective",
+        "cost categories included"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-09",
+      "item": "time_horizon",
+      "target_section": "Methods",
+      "required_evidence": [
+        "time horizon",
+        "rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-10",
+      "item": "discount_rate",
+      "target_section": "Methods",
+      "required_evidence": [
+        "discount rates for costs/outcomes",
+        "rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-11",
+      "item": "outcomes",
+      "target_section": "Methods",
+      "required_evidence": [
+        "outcome measures",
+        "valuation methods"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-12",
+      "item": "measurement_effectiveness",
+      "target_section": "Methods",
+      "required_evidence": [
+        "effectiveness source",
+        "synthesis method"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-13",
+      "item": "measurement_resources_costs",
+      "target_section": "Methods",
+      "required_evidence": [
+        "resource use measurement",
+        "unit cost sources",
+        "currency/date"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-14",
+      "item": "model_rationale",
+      "target_section": "Methods",
+      "required_evidence": [
+        "model type",
+        "structure rationale",
+        "assumptions"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-15",
+      "item": "analytics_assumptions",
+      "target_section": "Methods",
+      "required_evidence": [
+        "model assumptions and parameter choices"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-16",
+      "item": "characterizing_heterogeneity",
+      "target_section": "Methods",
+      "required_evidence": [
+        "subgroups or heterogeneity handling"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-17",
+      "item": "uncertainty",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sensitivity/probabilistic uncertainty analysis"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-18",
+      "item": "equity_distribution",
+      "target_section": "Methods/Discussion",
+      "required_evidence": [
+        "equity or distributional effects when relevant"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": false
+    },
+    {
+      "item_id": "CHEERS-19",
+      "item": "engagement",
+      "target_section": "Methods/Discussion",
+      "required_evidence": [
+        "patient/public/stakeholder engagement if performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": false
+    },
+    {
+      "item_id": "CHEERS-20",
+      "item": "parameters",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "model parameters",
+        "ranges",
+        "sources"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-21",
+      "item": "incremental_costs_outcomes",
+      "target_section": "Results",
+      "required_evidence": [
+        "mean costs/outcomes",
+        "incremental values",
+        "ICER where relevant"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-22",
+      "item": "uncertainty_results",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "uncertainty analysis results"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-23",
+      "item": "heterogeneity_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "subgroup/heterogeneity results when performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": false
+    },
+    {
+      "item_id": "CHEERS-24",
+      "item": "discussion",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "findings",
+        "limitations",
+        "generalizability",
+        "knowledge context"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-25",
+      "item": "source_funding",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funding source",
+        "funder role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-26",
+      "item": "conflicts",
+      "target_section": "Statements",
+      "required_evidence": [
+        "conflicts of interest"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-27",
+      "item": "data_code_availability",
+      "target_section": "Statements",
+      "required_evidence": [
+        "data/model/code availability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CHEERS-28",
+      "item": "approach_limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "method limitations and decision relevance"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

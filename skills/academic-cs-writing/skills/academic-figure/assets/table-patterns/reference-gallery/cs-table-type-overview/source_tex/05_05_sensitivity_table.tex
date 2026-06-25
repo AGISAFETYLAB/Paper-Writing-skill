@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=6.0in,paperheight=3.15in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Hyperparameter Sensitivity Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Show robustness to thresholds, budgets, context lengths, or decoding settings.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Sensitivity to the confidence threshold. The shaded row is the selected default.}
+\label{tab:sensitivity}
+\small
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Threshold} & \textbf{Coverage} & \textbf{Precision $\uparrow$} &
+\textbf{Recall $\uparrow$} & \textbf{Latency $\downarrow$} \\
+\midrule
+0.30 & 98.1 & 71.4 & 89.7 & 62 \\
+0.40 & 95.6 & 74.9 & 86.2 & 63 \\
+\rowcolor{FocusRow}
+\textbf{0.50} & \textbf{92.4} & \textbf{78.3} & \textbf{82.1} & \textbf{64} \\
+0.60 & 87.0 & 81.6 & 75.5 & 64 \\
+0.70 & 79.2 & 84.1 & 66.8 & 65 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Ordered natural-width table; highlight the selected/default row rather than every best value.}}
+\end{document}

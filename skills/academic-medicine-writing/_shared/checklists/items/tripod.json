@@ -1,0 +1,436 @@
+{
+  "checklist": "TRIPOD",
+  "version": "official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/tripod-statement/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/tripod-statement/",
+  "items": [
+    {
+      "item_id": "TRIPOD-01",
+      "item": "title_abstract",
+      "target_section": "Title/Abstract",
+      "required_evidence": [
+        "prediction model study label",
+        "development/validation purpose"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-02",
+      "item": "abstract",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "source data",
+        "participants",
+        "outcome",
+        "predictors",
+        "performance",
+        "validation status"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-03",
+      "item": "background_objectives",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "medical context",
+        "specific prediction objective"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-04",
+      "item": "source_data",
+      "target_section": "Methods",
+      "required_evidence": [
+        "study design or data source",
+        "setting",
+        "dates"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-05",
+      "item": "participants",
+      "target_section": "Methods",
+      "required_evidence": [
+        "eligibility criteria",
+        "inclusion/exclusion",
+        "treatment context if relevant"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-06",
+      "item": "outcome",
+      "target_section": "Methods",
+      "required_evidence": [
+        "outcome definition",
+        "measurement method",
+        "prediction horizon"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-07",
+      "item": "predictors",
+      "target_section": "Methods",
+      "required_evidence": [
+        "candidate predictors",
+        "measurement timing",
+        "blinding where relevant"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-08",
+      "item": "sample_size",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sample size",
+        "events per predictor rationale if available"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-09",
+      "item": "missing_data",
+      "target_section": "Methods",
+      "required_evidence": [
+        "missing data amount and handling method"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-10",
+      "item": "statistical_analysis",
+      "target_section": "Methods",
+      "required_evidence": [
+        "modeling method",
+        "predictor selection",
+        "complexity control",
+        "assumptions"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-11",
+      "item": "risk_groups",
+      "target_section": "Methods",
+      "required_evidence": [
+        "risk group definitions or thresholds when used"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-12",
+      "item": "development_validation",
+      "target_section": "Methods",
+      "required_evidence": [
+        "development/validation split",
+        "internal/external validation method"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-13",
+      "item": "participant_flow",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "participant flow",
+        "excluded records",
+        "analysis population"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-14",
+      "item": "participant_characteristics",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "baseline characteristics",
+        "outcome counts"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-15",
+      "item": "model_specification",
+      "target_section": "Results",
+      "required_evidence": [
+        "final model predictors",
+        "coefficients or implementable specification"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-16",
+      "item": "model_performance",
+      "target_section": "Results",
+      "required_evidence": [
+        "discrimination",
+        "calibration",
+        "overall performance",
+        "uncertainty"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-17",
+      "item": "model_updating",
+      "target_section": "Results",
+      "required_evidence": [
+        "updating or recalibration if performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-18",
+      "item": "limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "model limitations",
+        "bias",
+        "overfitting",
+        "missing data",
+        "transportability"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-19",
+      "item": "interpretation",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "interpretation bounded to validation status and intended population"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-20",
+      "item": "clinical_use_boundary",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "clinical utility boundary",
+        "implementation not implied without evidence"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-21",
+      "item": "supplementary_material",
+      "target_section": "Supplement",
+      "required_evidence": [
+        "calculator/code/model formula availability if applicable"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "TRIPOD-22",
+      "item": "funding",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funding source and funder role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=7.6in,paperheight=4.35in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Training Or Inference Configuration Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Record reproducibility settings without turning them into performance claims.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Training and inference configuration. Values are protocol facts, not performance results.}
+\label{tab:configuration}
+\small
+\begin{tabularx}{\linewidth}{@{}L{0.18\linewidth}L{0.24\linewidth}Y@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Phase} & \textbf{Setting} & \textbf{Value or policy} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{\textcolor{GroupText}{Optimization}}} \\
+Training & Optimizer & AdamW with cosine decay and no schedule change after model selection. \\
+Training & Batch budget & 128 sequences per update with gradient accumulation for memory parity. \\
+\addlinespace[1pt]
+\multicolumn{3}{@{}l}{\textit{\textcolor{GroupText}{Selection}}} \\
+Validation & Early stopping & Select the checkpoint with the best validation score under the primary metric. \\
+Validation & Random seeds & Report mean and interval over three seeds when a metric is seed-sensitive. \\
+\addlinespace[1pt]
+\multicolumn{3}{@{}l}{\textit{\textcolor{GroupText}{Inference}}} \\
+Decoding & Budget & Fixed token and tool-call budget across all compared systems. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Phase-grouped key-value table; no best-value styling.}}
+\end{document}

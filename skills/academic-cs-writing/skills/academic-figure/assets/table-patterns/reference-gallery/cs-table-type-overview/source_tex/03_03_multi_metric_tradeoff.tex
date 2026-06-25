@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=7.6in,paperheight=3.45in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Multi-Metric Tradeoff Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Compare quality, efficiency, cost, and robustness without flattening metric families.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Quality--efficiency tradeoff summary. Arrows mark the desired direction.}
+\label{tab:multi-metric-tradeoff}
+\small
+\setlength{\tabcolsep}{3.3pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}L{0.22\linewidth}rrrrrr@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{System} & \multicolumn{2}{c}{\textbf{Quality}} &
+\multicolumn{2}{c}{\textbf{Efficiency}} & \multicolumn{2}{c}{\textbf{Reliability}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(l){6-7}
+\rowcolor{HeaderTint}
+ & \textbf{Score $\uparrow$} & \textbf{Gap $\downarrow$} &
+\textbf{Latency $\downarrow$} & \textbf{Cost $\downarrow$} &
+\textbf{Fail $\downarrow$} & \textbf{Stable $\uparrow$} \\
+\midrule
+Fast baseline & 71.2 & 8.9 & 54 & 0.42 & 6.8 & 83.1 \\
+Large baseline & 76.8 & 5.6 & 138 & 1.18 & 4.9 & 86.4 \\
+Guarded variant & 78.1 & 4.8 & 91 & 0.76 & 3.7 & 88.2 \\
+\midrule
+\rowcolor{FocusRow}
+\textbf{Proposed system} & \textbf{80.5} & \textbf{3.9} & \textbf{74} &
+\textbf{0.63} & \textbf{2.8} & \textbf{90.6} \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Grouped numeric table; compact columns for numbers and spanners for metric families.}}
+\end{document}

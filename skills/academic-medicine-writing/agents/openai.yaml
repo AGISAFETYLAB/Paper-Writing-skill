@@ -1,0 +1,3 @@
+display_name: Academic Medicine Writing
+short_description: Checklist-first support for medical manuscript artifacts and submission packages.
+default_prompt: Use academic-medicine-writing to plan a checklist-compliant medical manuscript from my study evidence, stop at required confirmation gates, and keep unsupported clinical claims blocked.

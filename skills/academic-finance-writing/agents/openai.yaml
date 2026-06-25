@@ -1,0 +1,3 @@
+display_name: Academic Finance Writing
+short_description: Version-aware drafting, revision, citation, figure, and review support for finance manuscripts.
+default_prompt: Use academic-finance-writing to plan a finance working paper or journal submission from my data notes.

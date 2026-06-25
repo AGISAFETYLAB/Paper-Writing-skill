@@ -1,0 +1,165 @@
+name: academic-writing
+version: 1.0.0
+description: >
+  Hub manifest for the standalone medicine writing package.
+
+always_load:
+  - ../../_shared/core/stance.md
+  - ../../_shared/core/gates.md
+  - ../../_shared/core/output-format.md
+  - ../../_shared/core/package-gates.md
+
+axes:
+  workflow:
+    detect: |
+      Full Draft Workflow when the user provides a workspace or asks for a complete first
+      manuscript from source materials. Draft Revision Workflow when the user
+      provides existing prose, Word, Markdown, or LaTeX and asks to revise, polish, compress, diagnose, or prepare
+      a version for submission. Revision Response Workflow when the user provides reviewer comments,
+      editor decision letters, revision notes, or asks for a point-by-point response package.
+    values:
+      full-draft: static/workflow/full-draft.md
+      draft-revision: static/workflow/draft-revision.md
+      revision-response: static/workflow/revision-response.md
+    default: draft-revision
+    multi: false
+
+  study_type:
+    detect: |
+      Select the reporting checklist from the study design. Ask when two checklists would change
+      the manuscript structure.
+    values:
+      consort-rct: ../../_shared/checklists/consort-rct.md
+      spirit-protocol: ../../_shared/checklists/spirit-protocol.md
+      strobe-observational: ../../_shared/checklists/strobe-observational.md
+      prisma-review: ../../_shared/checklists/prisma-review.md
+      stard-diagnostic: ../../_shared/checklists/stard-diagnostic.md
+      tripod-prediction: ../../_shared/checklists/tripod-prediction.md
+      care-case-report: ../../_shared/checklists/care-case-report.md
+      gather-global-health: ../../_shared/checklists/gather-global-health.md
+      cheers-health-economics: ../../_shared/checklists/cheers-health-economics.md
+    default: strobe-observational
+    multi: false
+
+  article_type:
+    detect: |
+      Select the medicine paper/article type profile after study_type and target journal status are
+      known. This axis owns section structure and proportional budget, while study_type owns the
+      reporting checklist. Prefer the exact target-journal article type when named; otherwise infer
+      from source evidence and mark the inference as provisional. Ask only when the choice changes
+      section structure, length budget, or submission route.
+    values:
+      generic-medical-article: ../../_shared/article-types/generic-medical-article.md
+      original-investigation: ../../_shared/article-types/original-investigation.md
+      clinical-trial: ../../_shared/article-types/clinical-trial.md
+      study-protocol: ../../_shared/article-types/study-protocol.md
+      observational-study: ../../_shared/article-types/observational-study.md
+      systematic-review: ../../_shared/article-types/systematic-review.md
+      scoping-rapid-review: ../../_shared/article-types/scoping-rapid-review.md
+      diagnostic-accuracy: ../../_shared/article-types/diagnostic-accuracy.md
+      prediction-model: ../../_shared/article-types/prediction-model.md
+      case-report: ../../_shared/article-types/case-report.md
+      research-letter: ../../_shared/article-types/research-letter.md
+      review-perspective: ../../_shared/article-types/review-perspective.md
+      qualitative-mixed-methods: ../../_shared/article-types/qualitative-mixed-methods.md
+      methods-paper: ../../_shared/article-types/methods-paper.md
+      guideline-consensus: ../../_shared/article-types/guideline-consensus.md
+      editorial-commentary-letter: ../../_shared/article-types/editorial-commentary-letter.md
+      data-resource-paper: ../../_shared/article-types/data-resource-paper.md
+      health-economics: ../../_shared/article-types/health-economics.md
+      global-health-estimates: ../../_shared/article-types/global-health-estimates.md
+    default: generic-medical-article
+    multi: false
+
+  section:
+    detect: |
+      Load when drafting or revising named manuscript sections, or when creating a full manuscript.
+    values:
+      title-abstract: references/sections/title-abstract.md
+      introduction: references/sections/introduction.md
+      literature-positioning: references/sections/literature-positioning.md
+      methods: references/sections/methods.md
+      results: references/sections/results.md
+      discussion: references/sections/discussion.md
+      appendix-supplement: references/sections/appendix-supplement.md
+      statements: references/sections/statements.md
+    multi: true
+
+stages:
+  - condition: "Writing Policy stage"
+    path: static/workflow/stages/writing-policy.md
+  - condition: "Paper Framework stage"
+    path: static/workflow/stages/paper-framework.md
+  - condition: "Manuscript Package setup"
+    path: static/workflow/stages/manuscript-package.md
+  - condition: "Section drafting loop"
+    path: static/workflow/stages/section-drafting.md
+
+routes:
+  - condition: "Submission Format Route is word-first"
+    path: static/workflow/routes/word-first.md
+  - condition: "Submission Format Route is latex-first"
+    path: static/workflow/routes/latex-first.md
+  - condition: "Submission Format Route is generic-review"
+    path: static/workflow/routes/generic-review.md
+
+delegates:
+  - skill: academic-figure
+    path: ../academic-figure/SKILL.md
+    when: "any clinical figure, table, flow diagram, or supplement display is planned or produced"
+  - skill: academic-citation
+    path: ../academic-citation/SKILL.md
+    when: "any citation, guideline source, trial-registration source, or bibliography entry is needed or audited"
+  - skill: academic-review
+    path: ../academic-review/SKILL.md
+    when: "the first complete paper/ manuscript package exists or submission-readiness/checklist review is requested"
+
+references:
+  on_demand:
+    - condition: "template selection, Word manuscript package assembly, or compiled PDF project assembly"
+      path: ../../_shared/submission/templates.md
+    - condition: "word-first route, JAMA/JAMA-family Word manuscript, DOCX production, AMA superscript citation audit, or DOCX quality gate"
+      path: ../../_shared/submission/word-first-production.md
+    - condition: "target journal, article type, reporting guideline, or medical submission requirements"
+      path: ../../_shared/submission/venues.md
+    - condition: "medical article type selection or Paper Framework structure profile"
+      path: ../../_shared/article-types/index.md
+    - condition: "article type profile boundary and deviation rules"
+      path: ../../_shared/article-types/profile-boundary.md
+    - condition: "item-level checklist evidence slots or checklist matrix construction"
+      path: ../../_shared/checklists/items/index.md
+    - condition: "medical statements: ethics, consent, registration, data sharing, funding, conflicts"
+      path: ../../_shared/submission/statements.md
+    - condition: "paragraph-level flow, one-message paragraphs, local compression, or prose salience"
+      path: references/sections/paragraph-flow.md
+    - condition: "data/code availability route, FAIR metadata, repository records, or restricted data"
+      path: ../../_shared/submission/data-availability.md
+    - condition: "result reliability, validation chain, bias, overfitting, or claim discipline audit"
+      path: ../../_shared/checks/reliability.md
+    - condition: "claim registry, source tracing, or citation-drift verification"
+      path: ../../_shared/checks/claim-verification.md
+    - condition: "section drafting or revision guide index"
+      path: references/sections/index.md
+    - condition: "title, abstract, Key Points, or summary box drafting/revision"
+      path: references/sections/title-abstract.md
+    - condition: "Introduction drafting/revision"
+      path: references/sections/introduction.md
+    - condition: "literature positioning, Background, Related Work, prior-work comparison, or Discussion comparison"
+      path: references/sections/literature-positioning.md
+    - condition: "Methods drafting/revision"
+      path: references/sections/methods.md
+    - condition: "Results drafting/revision"
+      path: references/sections/results.md
+    - condition: "Discussion, limitations, or conclusion drafting/revision"
+      path: references/sections/discussion.md
+    - condition: "appendix, supplement, eTable/eFigure, extended methods, checklist appendix, or supplemental analysis drafting/revision"
+      path: references/sections/appendix-supplement.md
+    - condition: "statement section drafting/revision"
+      path: references/sections/statements.md
+    - condition: "examples of checklist-to-section mapping"
+      path: references/examples.md
+    - condition: "workflow-state.json, aggregate package gate, captured-output behavior evals, or final paper package consistency"
+      path: ../../_shared/core/package-gates.md
+tools:
+  - path: ../academic-review/scripts/audit_submission_package.py
+    usage: "python ../academic-review/scripts/audit_submission_package.py paper"

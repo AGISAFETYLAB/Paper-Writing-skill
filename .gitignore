@@ -1,0 +1,33 @@
+# Python/generated caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local OS/editor noise
+.DS_Store
+*~
+
+# Development-only validation assets; not needed to install or run the public skill package
+tests/
+**/tests/
+**/evals/
+**/maintenance/
+shared-source/
+tools/
+
+# Local promotional/design materials
+xhs-promo/
+design.md
+promo-image-design.md
+
+# LaTeX build byproducts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg

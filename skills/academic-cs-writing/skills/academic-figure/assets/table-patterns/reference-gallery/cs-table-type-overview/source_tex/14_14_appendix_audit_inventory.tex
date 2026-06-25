@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=7.6in,paperheight=3.2in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Appendix Audit Or Inventory Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Track denominators, inclusion rules, checklist items, or appendix completeness.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Appendix audit inventory. Each item has a scope, source, and fill status.}
+\label{tab:appendix-audit}
+\small
+\begin{tabularx}{\linewidth}{@{}L{0.14\linewidth}L{0.18\linewidth}L{0.18\linewidth}Y@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Item} & \textbf{Scope} & \textbf{Status} & \textbf{Reader-facing action} \\
+\midrule
+A.1 & Denominator audit & Complete & Report excluded cases and the scorable denominator. \\
+A.2 & Prompt template & Complete & Include normalized template text without local file names. \\
+A.3 & Additional examples & Partial & Move full examples to appendix and keep body prose concise. \\
+A.4 & Reproducibility notes & Complete & State hardware, budget, and selection policy together. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Appendix-grade table with source scope, status, and action; no performance highlighting.}}
+\end{document}

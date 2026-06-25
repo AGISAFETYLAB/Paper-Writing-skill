@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=6.2in,paperheight=2.9in,margin=0.24in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\pagenumbering{gobble}
+\definecolor{Rule}{HTML}{4D4D4D}
+\definecolor{SoftRule}{HTML}{C8CED6}
+\definecolor{HeaderTint}{HTML}{EEF3F8}
+\definecolor{FocusRow}{HTML}{F2F6FB}
+\definecolor{GroupText}{HTML}{374151}
+\arrayrulecolor{Rule}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.11}
+
+\begin{document}
+{\large\textbf{Ablation Table}}\\[-0.05em]
+{\footnotesize\textcolor{GroupText}{Show component necessity or design contribution.}}\\[0.35em]
+\begin{table}[H]
+\centering
+\caption{Component ablation. The full system combines the three confirmed modules.}
+\label{tab:ablation}
+\small
+\begin{tabular}{@{}lccc rr@{}}
+\toprule
+\rowcolor{HeaderTint}
+\textbf{Variant} & \textbf{Retriever} & \textbf{Verifier} & \textbf{Guard} &
+\textbf{Score $\uparrow$} & \textbf{Fail $\downarrow$} \\
+\midrule
+Base pipeline & -- & -- & -- & 61.8 & 11.2 \\
++ Retriever & $\checkmark$ & -- & -- & 66.5 & 9.1 \\
++ Verifier & $\checkmark$ & $\checkmark$ & -- & 70.2 & 6.4 \\
+\midrule
+\rowcolor{FocusRow}
+\textbf{Full system} & $\checkmark$ & $\checkmark$ & $\checkmark$ &
+\textbf{74.9} & \textbf{4.8} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\vfill
+{\footnotesize\textcolor{GroupText}{Width policy: Natural-width table; checkmark columns stay compact; final row can be lightly shaded.}}
+\end{document}

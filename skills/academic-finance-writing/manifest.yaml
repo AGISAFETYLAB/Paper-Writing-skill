@@ -1,0 +1,126 @@
+name: academic-finance-writing
+version: 0.2.0
+description: >
+  Declarative manifest for the standalone finance academic-writing package.
+
+always_load:
+  - _shared/core/stance.md
+  - _shared/core/gates.md
+  - _shared/core/workflow-contract.md
+  - _shared/core/output-format.md
+
+axes:
+  workflow:
+    detect: |
+      Choose the workflow from the user's request. Full draft from project materials,
+      draft revision for existing prose, citation-check for finance/economics claim
+      support, figure-table for display planning, review for submission readiness, or
+      submission-package for journal/working-paper materials.
+    values:
+      full-draft: _shared/core/workflow-contract.md
+      package-completion: _shared/core/workflow-contract.md
+      draft-revision: _shared/core/workflow-contract.md
+      audit-only: _shared/core/workflow-contract.md
+      revision-response: skills/academic-writing/references/referee-response.md
+      citation-check: skills/academic-citation/references/citation.md
+      figure-table: skills/academic-figure/references/figures.md
+      figure-only: skills/academic-figure/references/figures.md
+      table-only: skills/academic-figure/references/figures.md
+      review: skills/academic-review/references/review.md
+      submission-package: _shared/submission/submission-standards.md
+    default: draft-revision
+    multi: false
+
+  version_target:
+    detect: |
+      Finance papers may be working papers, journal submissions, or conference submissions.
+      Use explicit user wording first. If absent, default to working-paper for early drafts
+      and journal-submission for submission/readiness requests.
+    values:
+      working-paper: _shared/version-targets/working-paper.md
+      journal-submission: _shared/version-targets/journal-submission.md
+      conference-submission: _shared/version-targets/conference-submission.md
+    default: working-paper
+    multi: false
+
+  paper_type:
+    detect: |
+      Select the finance structural paper type. Use the user's explicit type first. If the user
+      names only a domain or method, keep it outside paper_type and choose the structural profile:
+      generic finance paper, empirical research, theoretical model, short insight / letter,
+      review/survey/perspective, comment/replication/corrigendum, or data/method/software.
+    values:
+      generic-finance-paper: _shared/paper-types/generic-finance-paper.md
+      empirical-research-paper: _shared/paper-types/empirical-research-paper.md
+      theoretical-model-paper: _shared/paper-types/theoretical-model-paper.md
+      short-insight-letter-paper: _shared/paper-types/short-insight-letter-paper.md
+      review-survey-perspective-paper: _shared/paper-types/review-survey-perspective-paper.md
+      comment-replication-corrigendum-paper: _shared/paper-types/comment-replication-corrigendum-paper.md
+      data-method-software-paper: _shared/paper-types/data-method-software-paper.md
+    default: generic-finance-paper
+    multi: false
+
+  section:
+    detect: |
+      Identify the manuscript section(s) requested. Load this only when the request names
+      a section or when drafting a full manuscript.
+    values:
+      title-abstract: skills/academic-writing/references/sections/title-abstract.md
+      introduction: skills/academic-writing/references/sections/introduction.md
+      literature-positioning: skills/academic-writing/references/sections/literature-positioning.md
+      data-institutional-setting: skills/academic-writing/references/sections/data-institutional-setting.md
+      data-methods: skills/academic-writing/references/sections/identification-methods.md
+      identification-methods: skills/academic-writing/references/sections/identification-methods.md
+      theory-model: skills/academic-writing/references/sections/theory-model.md
+      results: skills/academic-writing/references/sections/results.md
+      mechanisms-robustness: skills/academic-writing/references/sections/mechanisms-robustness.md
+      discussion: skills/academic-writing/references/sections/discussion-conclusion.md
+      discussion-conclusion: skills/academic-writing/references/sections/discussion-conclusion.md
+      appendix: skills/academic-writing/references/sections/appendix-online-appendix.md
+      appendix-online-appendix: skills/academic-writing/references/sections/appendix-online-appendix.md
+    multi: true
+
+references:
+  on_demand:
+    - condition: "full manuscript writing, package completion, draft revision, audit-only writing task, or revision response"
+      path: skills/academic-writing/SKILL.md
+    - condition: "figure-only, table-only, display plan, plotted figure, table shell, or display audit"
+      path: skills/academic-figure/SKILL.md
+    - condition: "citation-only, source finding, BibTeX repair, bibliography audit, or Citation Evidence Ledger"
+      path: skills/academic-citation/SKILL.md
+    - condition: "submission review, referee-risk audit, data-code review, page-window audit, or local path leak gate"
+      path: skills/academic-review/SKILL.md
+    - condition: "section guide routing or named-section drafting/revision; then let the writing subskill load the specific section guide"
+      path: skills/academic-writing/references/sections/index.md
+    - condition: "drafting, revision, section prose, abstract, introduction, conclusion, or anti-AI polishing"
+      path: skills/academic-writing/references/prose-style.md
+    - condition: "Finance Writing Craft Gate, Contribution And Belief-Update Gate, Results Narrative Gate, Title-Abstract-Introduction Scorecard, writing_craft_status, belief_update_status, results_narrative_status, or prose lint"
+      path: skills/academic-writing/references/writing-craft.md
+    - condition: "finance domain, subfield, JEL G category, asset pricing, corporate finance, banking, financial institutions, market microstructure, behavioral finance, household finance, fintech, digital assets, accounting, disclosure, risk, insurance, derivatives, macro finance, international finance, ESG, climate finance, real estate, private equity, venture capital, or domain adapter"
+      path: _shared/checks/finance-domains.md
+    - condition: "method family, JEL C, DiD, IV, RD, synthetic control, event study, portfolio sort, factor model, structural estimation, ML, experiment, survey, theory proof, or backtest method writing"
+      path: _shared/checks/identification-strategies.md
+    - condition: "journal, data availability, or reproducibility planning"
+      path: _shared/venues/index.md
+    - condition: "official submission standard, target-venue source check, or submission-ready claim"
+      path: _shared/submission/submission-standards.md
+    - condition: "finance target venue list, venue card index, or venue selection"
+      path: _shared/venues/standards/index.md
+    - condition: "paper-type selection map or profile boundary rules"
+      path: _shared/paper-types/index.md
+    - condition: "paper-type structural deviation or Paper Framework hard default"
+      path: _shared/paper-types/profile-boundary.md
+    - condition: "data/code availability, replication package, vendor restrictions, or online appendix planning"
+      path: _shared/checks/data-code.md
+    - condition: "dataset profile, code audit, script registry, code sweep, code-output map, or replication package map"
+      path: _shared/checks/research-workflow.md
+    - condition: "identification, backtest, econometric model, standard errors, or robustness design"
+      path: _shared/checks/econometrics.md
+    - condition: "needs examples of finance paper structures or representative paper logic"
+      path: skills/academic-writing/references/examples.md
+    - condition: "needs LaTeX template, compiled PDF, or paper project assembly"
+      path: _shared/submission/templates.md
+    - condition: "needs template source status, official template provenance, or Elsevier elsarticle"
+      path: assets/templates/source-manifest.yaml
+    - condition: "referee response, editor response, R&R, response letter, or revision backlog"
+      path: skills/academic-writing/references/referee-response.md

@@ -1,0 +1,35 @@
+name: academic-citation
+version: 1.0.0
+always_load:
+  - references/citation.md
+  - static/citation-workflow.md
+axes:
+  workflow:
+    detect: |
+      Choose search for missing support or new citations, verify for existing citations or metadata,
+      and audit for static bibliography/BibTeX integrity checks. Combined requests may use multiple
+      values.
+    values:
+      search: static/citation-workflow.md
+      verify: static/citation-workflow.md
+      audit: static/citation-workflow.md
+    default: verify
+    multi: true
+references:
+  on_demand:
+    - condition: "citation search, source discovery, live lookup, DOI, working paper, official data source, vendor source, software source, or journal policy source"
+      path: references/search/source-routing.md
+    - condition: "citation context, BibTeX entry, claim support, bibliography integrity, missing/wrong/orphan/over/under citation, recency, self-citation, or final citation audit"
+      path: references/checks/citation-integrity.md
+    - condition: "data, code, software, replication, or vendor citation"
+      path: ../../_shared/checks/data-code.md
+    - condition: "target journal or working-paper venue"
+      path: ../../_shared/venues/index.md
+    - condition: "target venue index, official submission policy, journal card, working-paper platform, or current venue rule"
+      path: ../../_shared/venues/standards/index.md
+    - condition: "econometric method citation"
+      path: ../../_shared/checks/econometrics.md
+    - condition: "identification strategy, factor model, benchmark, event-study, or backtest citation"
+      path: ../../_shared/checks/identification-strategies.md
+scripts:
+  - path: scripts/audit_citations.py

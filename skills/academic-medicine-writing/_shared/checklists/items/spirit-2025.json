@@ -1,0 +1,566 @@
+{
+  "checklist": "SPIRIT",
+  "version": "2025-official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.spirit-statement.org/",
+  "official_source_url": "https://www.spirit-statement.org/",
+  "items": [
+    {
+      "item_id": "SPIRIT-01",
+      "item": "title_trial_identifier",
+      "target_section": "Title page",
+      "required_evidence": [
+        "trial title",
+        "protocol version",
+        "date"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-02",
+      "item": "trial_registration",
+      "target_section": "Title page/Statements",
+      "required_evidence": [
+        "registry name",
+        "registration ID"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-03",
+      "item": "protocol_version",
+      "target_section": "Title page",
+      "required_evidence": [
+        "protocol version/date history"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-04",
+      "item": "funding",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funding source and role"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-05",
+      "item": "roles_responsibilities",
+      "target_section": "Statements",
+      "required_evidence": [
+        "sponsor",
+        "coordinating center",
+        "steering roles"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-06",
+      "item": "background_rationale",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "scientific background and rationale"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-07",
+      "item": "objectives",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "objectives or hypotheses"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-08",
+      "item": "trial_design",
+      "target_section": "Methods",
+      "required_evidence": [
+        "design",
+        "allocation ratio",
+        "framework"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-09",
+      "item": "study_setting",
+      "target_section": "Methods",
+      "required_evidence": [
+        "study setting and site types"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-10",
+      "item": "eligibility",
+      "target_section": "Methods",
+      "required_evidence": [
+        "participant inclusion/exclusion criteria"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-11",
+      "item": "interventions",
+      "target_section": "Methods",
+      "required_evidence": [
+        "intervention and comparator details"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-12",
+      "item": "discontinuation_modification",
+      "target_section": "Methods",
+      "required_evidence": [
+        "criteria for stopping/modifying intervention"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-13",
+      "item": "adherence",
+      "target_section": "Methods",
+      "required_evidence": [
+        "adherence strategies and monitoring"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-14",
+      "item": "concomitant_care",
+      "target_section": "Methods",
+      "required_evidence": [
+        "permitted and prohibited care"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-15",
+      "item": "outcomes",
+      "target_section": "Methods",
+      "required_evidence": [
+        "primary/secondary outcomes",
+        "time points"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-16",
+      "item": "participant_timeline",
+      "target_section": "Methods/Figures",
+      "required_evidence": [
+        "schedule of enrollment/interventions/assessments"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-17",
+      "item": "sample_size",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sample-size rationale and assumptions"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-18",
+      "item": "recruitment",
+      "target_section": "Methods",
+      "required_evidence": [
+        "recruitment strategy"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-19",
+      "item": "allocation_sequence",
+      "target_section": "Methods",
+      "required_evidence": [
+        "sequence generation",
+        "concealment",
+        "implementation"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-20",
+      "item": "blinding",
+      "target_section": "Methods",
+      "required_evidence": [
+        "who is blinded",
+        "unblinding procedures"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-21",
+      "item": "data_collection",
+      "target_section": "Methods",
+      "required_evidence": [
+        "assessment/data collection plans",
+        "retention"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-22",
+      "item": "data_management",
+      "target_section": "Methods",
+      "required_evidence": [
+        "data entry, coding, security, quality checks"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-23",
+      "item": "statistical_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "primary/secondary analyses",
+        "subgroups",
+        "missing data"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-24",
+      "item": "monitoring",
+      "target_section": "Methods",
+      "required_evidence": [
+        "data monitoring committee or monitoring plan"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-25",
+      "item": "harms",
+      "target_section": "Methods",
+      "required_evidence": [
+        "adverse event collection/reporting"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-26",
+      "item": "auditing",
+      "target_section": "Methods",
+      "required_evidence": [
+        "trial conduct auditing if any"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": false
+    },
+    {
+      "item_id": "SPIRIT-27",
+      "item": "ethics_approval",
+      "target_section": "Statements",
+      "required_evidence": [
+        "ethics approval plans/status"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-28",
+      "item": "consent",
+      "target_section": "Statements",
+      "required_evidence": [
+        "informed consent process"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-29",
+      "item": "confidentiality_data_access",
+      "target_section": "Statements",
+      "required_evidence": [
+        "confidentiality",
+        "data access",
+        "ancillary/post-trial care"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "SPIRIT-30",
+      "item": "dissemination",
+      "target_section": "Statements",
+      "required_evidence": [
+        "publication policy",
+        "data sharing",
+        "communication plan"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

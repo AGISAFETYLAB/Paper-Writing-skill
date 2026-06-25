@@ -1,0 +1,258 @@
+{
+  "checklist": "CARE",
+  "version": "official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/care/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/care/",
+  "items": [
+    {
+      "item_id": "CARE-01",
+      "item": "title",
+      "target_section": "Title",
+      "required_evidence": [
+        "case report label",
+        "main phenomenon"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-02",
+      "item": "keywords",
+      "target_section": "Title page",
+      "required_evidence": [
+        "case domain keywords"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-03",
+      "item": "abstract",
+      "target_section": "Abstract",
+      "required_evidence": [
+        "introduction",
+        "case presentation",
+        "conclusion"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-04",
+      "item": "introduction",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "brief clinical context",
+        "why case is notable"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-05",
+      "item": "patient_information",
+      "target_section": "Case Presentation",
+      "required_evidence": [
+        "demographics",
+        "main symptoms",
+        "medical/family/social history"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-06",
+      "item": "clinical_findings",
+      "target_section": "Case Presentation",
+      "required_evidence": [
+        "physical exam or relevant clinical findings"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-07",
+      "item": "timeline",
+      "target_section": "Figure/Table",
+      "required_evidence": [
+        "chronological timeline of events"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-08",
+      "item": "diagnostic_assessment",
+      "target_section": "Case Presentation",
+      "required_evidence": [
+        "diagnostic methods",
+        "differential diagnosis",
+        "challenges"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-09",
+      "item": "therapeutic_intervention",
+      "target_section": "Case Presentation",
+      "required_evidence": [
+        "intervention details",
+        "administration",
+        "changes"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-10",
+      "item": "followup_outcomes",
+      "target_section": "Case Presentation",
+      "required_evidence": [
+        "follow-up",
+        "outcomes",
+        "adverse events"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-11",
+      "item": "discussion",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "strengths/limitations",
+        "literature context",
+        "rationale",
+        "takeaway"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "CARE-12",
+      "item": "patient_perspective",
+      "target_section": "Case Presentation/Supplement",
+      "required_evidence": [
+        "patient perspective when available"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": false
+    },
+    {
+      "item_id": "CARE-13",
+      "item": "informed_consent",
+      "target_section": "Statements",
+      "required_evidence": [
+        "patient consent for publication",
+        "privacy protection"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

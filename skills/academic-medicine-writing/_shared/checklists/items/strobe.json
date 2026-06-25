@@ -1,0 +1,440 @@
+{
+  "checklist": "STROBE",
+  "version": "official-item-local-paraphrase",
+  "source_note": "Official checklist item-level local paraphrase for writing evidence slots; verify against the official source before submission: https://www.equator-network.org/reporting-guidelines/strobe/",
+  "official_source_url": "https://www.equator-network.org/reporting-guidelines/strobe/",
+  "items": [
+    {
+      "item_id": "STROBE-01",
+      "item": "title_abstract_design",
+      "target_section": "Title/Abstract",
+      "required_evidence": [
+        "study design label",
+        "concise objective",
+        "key population/result summary"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-02",
+      "item": "background_rationale",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "scientific background",
+        "rationale for research question"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-03",
+      "item": "objectives_hypotheses",
+      "target_section": "Introduction",
+      "required_evidence": [
+        "specific objectives",
+        "prespecified hypotheses if present"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-04",
+      "item": "study_design",
+      "target_section": "Methods",
+      "required_evidence": [
+        "observational design type",
+        "key design elements"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-05",
+      "item": "setting_dates",
+      "target_section": "Methods",
+      "required_evidence": [
+        "setting and locations",
+        "recruitment/exposure/follow-up dates"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-06",
+      "item": "participants",
+      "target_section": "Methods/Results",
+      "required_evidence": [
+        "eligibility criteria",
+        "selection method",
+        "numbers by stage"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-07",
+      "item": "variables",
+      "target_section": "Methods",
+      "required_evidence": [
+        "outcomes",
+        "exposures",
+        "predictors",
+        "confounders",
+        "effect modifiers"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-08",
+      "item": "data_sources_measurement",
+      "target_section": "Methods",
+      "required_evidence": [
+        "data source for each variable",
+        "measurement method",
+        "comparability across groups"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-09",
+      "item": "bias",
+      "target_section": "Methods/Discussion",
+      "required_evidence": [
+        "bias sources",
+        "bias reduction methods"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-10",
+      "item": "study_size",
+      "target_section": "Methods",
+      "required_evidence": [
+        "study-size rationale",
+        "available cohort basis"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-11",
+      "item": "quantitative_variables",
+      "target_section": "Methods",
+      "required_evidence": [
+        "handling of quantitative variables",
+        "category cut points if used"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-12",
+      "item": "statistical_methods",
+      "target_section": "Methods",
+      "required_evidence": [
+        "model specification",
+        "confounder control",
+        "subgroup/interactions",
+        "missing data",
+        "sensitivity analyses"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-13",
+      "item": "participants_flow",
+      "target_section": "Results/Figures",
+      "required_evidence": [
+        "numbers at each stage",
+        "exclusions/losses",
+        "flow diagram or table"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-14",
+      "item": "descriptive_data",
+      "target_section": "Results/Tables",
+      "required_evidence": [
+        "participant characteristics",
+        "exposure groups",
+        "missingness by variable"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-15",
+      "item": "outcome_data",
+      "target_section": "Results",
+      "required_evidence": [
+        "number of outcome events or summary measures by group"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-16",
+      "item": "main_results",
+      "target_section": "Results",
+      "required_evidence": [
+        "unadjusted estimates",
+        "adjusted estimates",
+        "precision measures",
+        "confounders adjusted"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-17",
+      "item": "other_analyses",
+      "target_section": "Results",
+      "required_evidence": [
+        "subgroup analyses",
+        "interaction analyses",
+        "sensitivity analyses when performed"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-18",
+      "item": "key_results_summary",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "summary of key results tied to objectives"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-19",
+      "item": "limitations",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "limitations",
+        "potential bias direction/magnitude"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-20",
+      "item": "interpretation",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "cautious interpretation",
+        "objectives",
+        "limitations",
+        "external evidence"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-21",
+      "item": "generalizability",
+      "target_section": "Discussion",
+      "required_evidence": [
+        "population and setting boundary",
+        "external validity limits"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    },
+    {
+      "item_id": "STROBE-22",
+      "item": "funding_role",
+      "target_section": "Statements",
+      "required_evidence": [
+        "funding source",
+        "funder role or absence"
+      ],
+      "status": "needs_user_evidence",
+      "status_allowed": [
+        "satisfied",
+        "partial",
+        "missing",
+        "not_applicable",
+        "needs_user_evidence"
+      ],
+      "drafting_rule": "ask user or insert precise marker; do not invent",
+      "blocking_if_missing": true
+    }
+  ]
+}

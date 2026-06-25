@@ -1,0 +1,40 @@
+name: academic-review
+version: 1.0.0
+always_load:
+  - references/review.md
+  - ../../_shared/core/output-format.md
+references:
+  on_demand:
+    - condition: "identification, econometric, backtest, or robustness audit"
+      path: ../../_shared/checks/econometrics.md
+    - condition: "method-specific identification, event-study, factor-model, portfolio-sort, structural, or ML audit"
+      path: ../../_shared/checks/identification-strategies.md
+    - condition: "data-code or replication package audit"
+      path: ../../_shared/checks/data-code.md
+    - condition: "dataset profile, code-output map, script registry, code sweep, replication package, or Internet Appendix audit"
+      path: ../../_shared/checks/research-workflow.md
+    - condition: "target journal or version target"
+      path: ../../_shared/venues/index.md
+    - condition: "writing quality, abstract, introduction, results, conclusion, or anti-AI prose audit"
+      path: ../academic-writing/references/prose-style.md
+    - condition: "referee reports, response letter, R&R package, or revision audit"
+      path: ../academic-writing/references/referee-response.md
+    - condition: "compiled layout QA, table aesthetics audit, table-page contact sheet, manual layout inspection, overfull boxes, float too large warnings, or right-side table underfill"
+      path: ../academic-figure/scripts/inspect_compiled_layout.py
+    - condition: "finance table content hygiene, table payoff, table provenance, source_table_to_script_map, page_budget_cost, appendix destination, or venue-specific table override audit"
+      path: ../academic-figure/references/table-design.md
+    - condition: "LaTeX finance table lint, vertical rules, hline, resizebox, tabularx declared-width defects, missing captions, leading decimals without zero, or central_contrast_missing_uncertainty"
+      path: ../academic-figure/scripts/lint_finance_tables.py
+    - condition: "visual asset QA, cropped title, clipped axis label, clipped legend, blank preview, edge crop, or unused margin"
+      path: ../academic-figure/scripts/audit_visual_assets.py
+    - condition: "submission-package audit, submission attachment status, placeholder title page, placeholder conflict-of-interest disclosure, layout manual inspection status, or submission_readiness_verdict"
+      path: scripts/audit_submission_package.py
+tools:
+  - path: ../academic-figure/scripts/inspect_compiled_layout.py
+    usage: "python3 <skill>/../academic-figure/scripts/inspect_compiled_layout.py paper --pages tables --out-dir paper/layout-qa"
+  - path: ../academic-figure/scripts/lint_finance_tables.py
+    usage: "python3 <skill>/../academic-figure/scripts/lint_finance_tables.py paper"
+  - path: ../academic-figure/scripts/audit_visual_assets.py
+    usage: "python3 <skill>/../academic-figure/scripts/audit_visual_assets.py paper/figures"
+  - path: scripts/audit_submission_package.py
+    usage: "python3 <skill>/scripts/audit_submission_package.py paper"

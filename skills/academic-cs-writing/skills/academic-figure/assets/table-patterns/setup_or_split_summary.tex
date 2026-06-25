@@ -1,0 +1,27 @@
+% Reusable table skeleton. Replace sources, counts, notes, caption, and label
+% with source-backed paper content. Requires booktabs, tabularx, array, and xcolor[table].
+\definecolor{TableHeaderTint}{HTML}{EEF3F8}
+\definecolor{TableFocusTint}{HTML}{F2F6FB}
+\begin{table}[t]
+\centering
+\caption{Setup, source-composition, or split summary.}
+\label{tab:setup-or-split-summary}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.18\linewidth}rrrr>{\raggedright\arraybackslash}X@{}}
+\toprule
+\rowcolor{TableHeaderTint}
+\textbf{Source} & \textbf{Train} & \textbf{Dev} & \textbf{Test} & \textbf{Flagged} &
+\textbf{Protocol note} \\
+\midrule
+Dataset A & 18,240 & 2,160 & 2,400 & 4.8\% & Stratified by domain; no item appears in more than one split. \\
+Dataset B & 9,600 & 1,200 & 1,440 & 6.1\% & Evaluation keeps the original class balance and reports flagged cases separately. \\
+Dataset C & 7,840 & 980 & 1,120 & 3.9\% & Small domains are pooled only for reporting, not during model selection. \\
+\midrule
+\rowcolor{TableFocusTint}
+\textbf{Total} & \textbf{35,680} & \textbf{4,340} & \textbf{4,960} & \textbf{5.0\%} &
+Totals are computed after deduplication and before any task-specific filtering. \\
+\bottomrule
+\end{tabularx}
+\end{table}
