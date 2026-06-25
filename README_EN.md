@@ -1,6 +1,10 @@
 # Academic Writing Skill
 
-Chinese: [README.md](README.md)
+<p align="center">
+  <a href="README.md">简体中文版</a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md"><strong>English</strong></a>
+</p>
 
 `Academic Writing Skill` is a multi-discipline skill bundle for AI academic-writing assistants. It covers paper planning, first-draft generation, section rewriting, manuscript polishing, figure/table work, citation checking, and pre-submission review. It is not just a polishing template: it breaks paper ideas, evidence organization, section writing, prose expression, display design, and reviewer risk into executable writing workflows, so AI-generated and AI-revised paper artifacts can better respect real academic-writing constraints.
 
@@ -93,17 +97,6 @@ SKILL_HOME="${CODEX_HOME:-$HOME/.codex}/skills"
 # For Claude Code, use: SKILL_HOME="$HOME/.claude/skills"
 mkdir -p "$SKILL_HOME/academic-cs-writing"
 rsync -a --delete "skills/academic-cs-writing/" "$SKILL_HOME/academic-cs-writing/"
-```
-
-Windows PowerShell:
-
-```powershell
-$SkillHome = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
-# For Claude Code, use: $SkillHome = Join-Path $env:USERPROFILE ".claude\skills"
-$Target = Join-Path $SkillHome "academic-cs-writing"
-Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Force -Path $Target | Out-Null
-Copy-Item -Path "skills\academic-cs-writing\*" -Destination $Target -Recurse -Force
 ```
 
 ## Discipline Packages

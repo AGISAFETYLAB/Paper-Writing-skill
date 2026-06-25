@@ -1,6 +1,10 @@
 # Academic CS Writing
 
-Chinese: [README.md](README.md)
+<p align="center">
+  <a href="README.md">简体中文版</a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md"><strong>English</strong></a>
+</p>
 
 `academic-cs-writing` is the standalone computer-science package inside `Academic Writing Skill`. It supports CS, AI/ML, NLP, CV, HCI, systems, data mining, benchmark, dataset, and software-tool papers.
 

@@ -1,8 +1,12 @@
 # Academic Medicine Writing
 
-`academic-medicine-writing` 是 `Academic Writing Skill` 中可单独下载和安装的医学论文写作包，适用于临床研究、生物医学、公共卫生、诊断研究、治疗/安全性研究、预测模型、系统综述、case report 和 health-economics manuscript。
+<p align="center">
+  <a href="README.md"><strong>简体中文版</strong></a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md">English</a>
+</p>
 
-English: [README_EN.md](README_EN.md)
+`academic-medicine-writing` 是 `Academic Writing Skill` 中可单独下载和安装的医学论文写作包，适用于临床研究、生物医学、公共卫生、诊断研究、治疗/安全性研究、预测模型、系统综述、case report 和 health-economics manuscript。
 
 ## 单独安装
 

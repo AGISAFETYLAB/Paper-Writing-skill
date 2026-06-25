@@ -1,8 +1,12 @@
 # Academic CS Writing
 
-`academic-cs-writing` 是 `Academic Writing Skill` 中可单独下载和安装的计算机学科论文写作包，适用于 CS、AI/ML、NLP、CV、HCI、系统、数据挖掘、benchmark、dataset 和 software-tool paper。
+<p align="center">
+  <a href="README.md"><strong>简体中文版</strong></a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md">English</a>
+</p>
 
-English: [README_EN.md](README_EN.md)
+`academic-cs-writing` 是 `Academic Writing Skill` 中可单独下载和安装的计算机学科论文写作包，适用于 CS、AI/ML、NLP、CV、HCI、系统、数据挖掘、benchmark、dataset 和 software-tool paper。
 
 ## 单独安装
 

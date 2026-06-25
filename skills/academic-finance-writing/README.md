@@ -1,8 +1,12 @@
 # Academic Finance Writing
 
-`academic-finance-writing` 是 `Academic Writing Skill` 中可单独下载和安装的金融论文写作包，适用于金融经济学、资产定价、市场微观结构、公司金融、会计、银行、风险、portfolio、trading/backtest、fintech、event study、policy evaluation、theory model 和 econometrics paper。
+<p align="center">
+  <a href="README.md"><strong>简体中文版</strong></a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md">English</a>
+</p>
 
-English: [README_EN.md](README_EN.md)
+`academic-finance-writing` 是 `Academic Writing Skill` 中可单独下载和安装的金融论文写作包，适用于金融经济学、资产定价、市场微观结构、公司金融、会计、银行、风险、portfolio、trading/backtest、fintech、event study、policy evaluation、theory model 和 econometrics paper。
 
 ## 单独安装
 

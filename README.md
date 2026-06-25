@@ -1,8 +1,12 @@
 # Academic Writing Skill
 
-`Academic Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
+<p align="center">
+  <a href="README.md"><strong>简体中文版</strong></a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md">English</a>
+</p>
 
-English: [README_EN.md](README_EN.md)
+`Academic Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
 
 目前已开发学科：
 
@@ -100,17 +104,6 @@ SKILL_HOME="${CODEX_HOME:-$HOME/.codex}/skills"
 # Claude Code 用户可改为：SKILL_HOME="$HOME/.claude/skills"
 mkdir -p "$SKILL_HOME/academic-cs-writing"
 rsync -a --delete "skills/academic-cs-writing/" "$SKILL_HOME/academic-cs-writing/"
-```
-
-Windows PowerShell：
-
-```powershell
-$SkillHome = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
-# Claude Code 用户可改为：$SkillHome = Join-Path $env:USERPROFILE ".claude\skills"
-$Target = Join-Path $SkillHome "academic-cs-writing"
-Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Force -Path $Target | Out-Null
-Copy-Item -Path "skills\academic-cs-writing\*" -Destination $Target -Recurse -Force
 ```
 
 ## 三个学科包

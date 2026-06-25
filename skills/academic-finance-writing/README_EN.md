@@ -1,6 +1,10 @@
 # Academic Finance Writing
 
-Chinese: [README.md](README.md)
+<p align="center">
+  <a href="README.md">简体中文版</a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md"><strong>English</strong></a>
+</p>
 
 `academic-finance-writing` is the standalone finance package inside `Academic Writing Skill`. It supports financial economics, asset pricing, market microstructure, corporate finance, accounting, banking, risk, portfolio, trading/backtest, fintech, event-study, policy-evaluation, theory-model, and econometrics papers.
 

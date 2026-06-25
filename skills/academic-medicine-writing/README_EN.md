@@ -1,6 +1,10 @@
 # Academic Medicine Writing
 
-Chinese: [README.md](README.md)
+<p align="center">
+  <a href="README.md">简体中文版</a>
+  &nbsp;|&nbsp;
+  <a href="README_EN.md"><strong>English</strong></a>
+</p>
 
 `academic-medicine-writing` is the standalone medicine package inside `Academic Writing Skill`. It supports clinical, biomedical, public-health, diagnostic, treatment/safety, prediction-model, systematic-review, case-report, and health-economics manuscripts.
 
