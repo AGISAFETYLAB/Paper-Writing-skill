@@ -1,6 +1,6 @@
 # Academic CS Writing
 
-<p align="center">
+<p>
   <a href="README.md">简体中文版</a>
   &nbsp;|&nbsp;
   <a href="README_EN.md"><strong>English</strong></a>

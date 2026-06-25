@@ -1,6 +1,6 @@
 # Academic Writing Skill
 
-<p align="center">
+<p>
   <a href="README.md"><strong>简体中文版</strong></a>
   &nbsp;|&nbsp;
   <a href="README_EN.md">English</a>
