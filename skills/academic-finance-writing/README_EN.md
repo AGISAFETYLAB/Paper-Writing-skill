@@ -11,8 +11,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the finance package from the full repository:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
-cd academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git
+cd Academic-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"
@@ -24,6 +24,22 @@ If you are already inside `skills/academic-finance-writing/`:
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills/academic-finance-writing"
 rsync -a --delete ./ "$CODEX_HOME/skills/academic-finance-writing/"
+```
+
+Claude Code global install:
+
+```bash
+mkdir -p "$HOME/.claude/skills/academic-finance-writing"
+rsync -a --delete skills/academic-finance-writing/ "$HOME/.claude/skills/academic-finance-writing/"
+```
+
+Windows PowerShell:
+
+```powershell
+$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-finance-writing"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path "skills\academic-finance-writing\*" -Destination $Target -Recurse -Force
 ```
 
 ## Layout

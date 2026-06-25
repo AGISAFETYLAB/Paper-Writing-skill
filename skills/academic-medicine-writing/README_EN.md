@@ -11,8 +11,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the medicine package from the full repository:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
-cd academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git
+cd Academic-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"
@@ -24,6 +24,22 @@ If you are already inside the academic-medicine-writing package directory:
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills/academic-medicine-writing"
 rsync -a --delete ./ "$CODEX_HOME/skills/academic-medicine-writing/"
+```
+
+Claude Code global install:
+
+```bash
+mkdir -p "$HOME/.claude/skills/academic-medicine-writing"
+rsync -a --delete skills/academic-medicine-writing/ "$HOME/.claude/skills/academic-medicine-writing/"
+```
+
+Windows PowerShell:
+
+```powershell
+$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-medicine-writing"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path "skills\academic-medicine-writing\*" -Destination $Target -Recurse -Force
 ```
 
 ## Layout

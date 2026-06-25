@@ -25,57 +25,86 @@ Our goal is to help AI learn these practical paper-writing experiences, so gener
 
 ## Core Workflow
 
-```mermaid
-flowchart LR
-  A[User request] --> B{Choose discipline}
-  B --> C[CS / Medicine / Finance package]
-  C --> D{Task type}
-  D -->|Full draft / section writing / revision| E[Writing Policy]
-  E --> F[User confirmation]
-  F --> G[Paper Framework]
-  G --> H[User confirmation]
-  H --> I[Drafting and revision]
-  I --> J[Call Figure / Citation / Review as needed]
-  D -->|Figure or table only| K[Figure]
-  D -->|Citation only| L[Citation]
-  D -->|Review or submission check only| M[Review]
-```
+Academic Writing Skill first routes the request to the appropriate discipline package, then handles the requested writing task. A complete first draft usually follows `Writing Policy -> user confirmation -> Paper Framework -> user confirmation -> drafting and revision`. If the user only needs section rewriting, polishing, figures, citation checking, or pre-submission review, the corresponding task can be entered directly without running the full-draft workflow.
 
 To avoid one-click first drafts that do not match real paper-writing habits, Academic Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
 
-The root router also has a hard rule: **for every user request, classify discipline before task type**. Even if the user only asks to "draw a table," "draw a figure," or "polish this paragraph" and provides no working directory, first infer whether the content belongs to CS, medicine, or finance from the prose, title, venue, terminology, data type, variables, methods, citations, or reporting standard. If the discipline is not clear, pause immediately and ask only one concise discipline-selection question. Until the user answers, do not load any discipline package, classify task type, polish prose, create figures or tables, check citations, or review the manuscript, and do not silently default to a package.
-
 ## Install
 
-Download the full repository by default:
+> Quick install: you can copy the repository URL `https://github.com/AI45Lab/Academic-Writing-skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
+
+Clone the repository first:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git
+cd Academic-Writing-skill
 ```
 
-To install the full multi-discipline bundle:
+### Codex
+
+Full bundle, Mac / Linux:
 
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete academic-writing-skill/ "$CODEX_HOME/skills/academic-writing-skill/"
+mkdir -p "$CODEX_HOME/skills/academic-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/academic-writing-skill/"
 ```
 
-Install only one discipline package from the local clone:
+Full bundle, Windows PowerShell:
+
+```powershell
+$CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE ".codex" }
+$Target = Join-Path $CodexHome "skills\academic-writing-skill"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
+Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction SilentlyContinue
+```
+
+### Claude Code
+
+Full bundle, Mac / Linux:
+
+```bash
+mkdir -p "$HOME/.claude/skills/academic-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/academic-writing-skill/"
+```
+
+Full bundle, Windows PowerShell:
+
+```powershell
+$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-writing-skill"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
+Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction SilentlyContinue
+```
+
+### Install One Discipline Package
 
 Each discipline package is self-contained. Copying one `skills/<package>/` directory is enough; it must not depend on the repository root or sibling disciplines.
 
-If you only want to install one discipline skill, clone the full repository first, then copy the corresponding local directory:
+The example below installs the CS package. Medicine or finance users can replace `academic-cs-writing` with `academic-medicine-writing` or `academic-finance-writing`.
+
+Mac / Linux:
 
 ```bash
-CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete academic-writing-skill/skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
-rsync -a --delete academic-writing-skill/skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"
-rsync -a --delete academic-writing-skill/skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"
+SKILL_HOME="${CODEX_HOME:-$HOME/.codex}/skills"
+# For Claude Code, use: SKILL_HOME="$HOME/.claude/skills"
+mkdir -p "$SKILL_HOME/academic-cs-writing"
+rsync -a --delete "skills/academic-cs-writing/" "$SKILL_HOME/academic-cs-writing/"
 ```
 
-Run only the line for the package you need. For example, to install only the CS skill, run the `academic-cs-writing` line.
+Windows PowerShell:
+
+```powershell
+$SkillHome = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
+# For Claude Code, use: $SkillHome = Join-Path $env:USERPROFILE ".claude\skills"
+$Target = Join-Path $SkillHome "academic-cs-writing"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path "skills\academic-cs-writing\*" -Destination $Target -Recurse -Force
+```
 
 ## Discipline Packages
 

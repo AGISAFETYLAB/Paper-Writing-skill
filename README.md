@@ -25,64 +25,93 @@ English: [README_EN.md](README_EN.md)
 
 ## 核心流程
 
-```mermaid
-flowchart LR
-  A[用户请求] --> B{选择学科}
-  B --> C[CS / Medicine / Finance 学科包]
-  C --> D{任务类型}
-  D -->|完整写作 / 章节写作 / 改稿| E[Writing Policy]
-  E --> F[用户确认]
-  F --> G[Paper Framework]
-  G --> H[用户确认]
-  H --> I[正文写作与修订]
-  I --> J[按需调用 Figure / Citation / Review]
-  D -->|只做图表| K[Figure]
-  D -->|只查引用| L[Citation]
-  D -->|只做审稿或投稿检查| M[Review]
-```
+Academic Writing Skill 会先根据用户请求进入对应学科包，再处理具体写作任务。完整初稿通常按 `Writing Policy -> 用户确认 -> Paper Framework -> 用户确认 -> 正文写作与修订` 推进；如果用户只需要章节改写、论文润色、图表、引用核查或投稿前审稿，也可以直接进入对应任务，不必走完整初稿流程。
 
 为了避免“一键生成”的初稿不符合真实论文写作习惯，Academic Writing Skill 在生成完整初稿之前设置了两个检查点：agent 必须分别在 `Writing Policy` 和 `Paper Framework` 阶段停下来，将原本可能被静默决定的内容展示给作者确认或修改，包括论文身份、证据边界、目标 venue、section 结构和图表计划等。
 
-根路由还有一个硬规则：**无论用户输入是什么，都必须先判断学科，再判断任务类型**。即使用户只说“画一张表”“画一张图”“润色这段论文”，且没有提供工作目录，也要先从正文、标题、术语、venue、数据类型、变量、方法、引用或报告规范中判断属于 CS、医学还是金融；如果判断不出，必须立刻暂停，只问一个简短的学科选择问题。用户回答之前不能加载任何学科包，不能继续判断任务类型，也不能开始润色、画图、做表、查引用或审稿，不能直接默认某个学科包。
-
 ## 安装方式
 
-### 方式一：默认下载整个仓库
+> 快速安装：您可以直接把项目地址 `https://github.com/AI45Lab/Academic-Writing-skill.git` 复制给你的 AI agent，让它按照本 README 安装完整包或某个学科包。
+
+先下载仓库：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git
+cd Academic-Writing-skill
 ```
 
-如果要安装完整多学科包：
+### Codex 安装
+
+完整安装，Mac / Linux：
 
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete academic-writing-skill/ "$CODEX_HOME/skills/academic-writing-skill/"
+mkdir -p "$CODEX_HOME/skills/academic-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/academic-writing-skill/"
 ```
 
-整体安装后可以直接让路由 skill 选择学科：
+完整安装，Windows PowerShell：
+
+```powershell
+$CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE ".codex" }
+$Target = Join-Path $CodexHome "skills\academic-writing-skill"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
+Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction SilentlyContinue
+```
+
+安装后可以直接让路由 skill 选择学科：
 
 ```text
 请用 academic-writing-skill 帮我根据这个实验目录写一篇 AI benchmark paper，先停在 Writing Policy。
 Use academic-writing-skill to review this finance manuscript for submission readiness.
 ```
 
-### 方式二：从本地仓库安装单个学科包
+### Claude Code 安装
+
+完整安装，Mac / Linux：
+
+```bash
+mkdir -p "$HOME/.claude/skills/academic-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/academic-writing-skill/"
+```
+
+完整安装，Windows PowerShell：
+
+```powershell
+$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-writing-skill"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
+Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction SilentlyContinue
+```
+
+### 只安装一个学科包
 
 每个学科包都必须能独立运行；复制 `skills/<学科包>/` 一个目录即可安装，不依赖仓库根目录或其他学科包。
 
-如果只想安装某个学科 skill，先 clone 整个仓库，再从本地复制对应目录：
+下面以 CS 为例。医学或金融用户把 `academic-cs-writing` 替换为 `academic-medicine-writing` 或 `academic-finance-writing` 即可。
+
+Mac / Linux：
 
 ```bash
-CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete academic-writing-skill/skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
-rsync -a --delete academic-writing-skill/skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"
-rsync -a --delete academic-writing-skill/skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"
+SKILL_HOME="${CODEX_HOME:-$HOME/.codex}/skills"
+# Claude Code 用户可改为：SKILL_HOME="$HOME/.claude/skills"
+mkdir -p "$SKILL_HOME/academic-cs-writing"
+rsync -a --delete "skills/academic-cs-writing/" "$SKILL_HOME/academic-cs-writing/"
 ```
 
-只选择需要的那一行执行即可。例如只安装 CS skill，就执行 `academic-cs-writing` 那一行。
+Windows PowerShell：
+
+```powershell
+$SkillHome = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
+# Claude Code 用户可改为：$SkillHome = Join-Path $env:USERPROFILE ".claude\skills"
+$Target = Join-Path $SkillHome "academic-cs-writing"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path "skills\academic-cs-writing\*" -Destination $Target -Recurse -Force
+```
 
 ## 三个学科包
 

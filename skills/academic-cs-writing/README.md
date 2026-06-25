@@ -9,8 +9,8 @@ English: [README_EN.md](README_EN.md)
 从完整仓库中只安装 CS 包：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
-cd academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git
+cd Academic-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
@@ -22,6 +22,22 @@ rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-wr
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills/academic-cs-writing"
 rsync -a --delete ./ "$CODEX_HOME/skills/academic-cs-writing/"
+```
+
+Claude Code 全局安装：
+
+```bash
+mkdir -p "$HOME/.claude/skills/academic-cs-writing"
+rsync -a --delete skills/academic-cs-writing/ "$HOME/.claude/skills/academic-cs-writing/"
+```
+
+Windows PowerShell：
+
+```powershell
+$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-cs-writing"
+Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force -Path $Target | Out-Null
+Copy-Item -Path "skills\academic-cs-writing\*" -Destination $Target -Recurse -Force
 ```
 
 ## 包结构
