@@ -50,7 +50,7 @@ flowchart LR
 ### 方式一：默认下载整个仓库
 
 ```bash
-git clone <repo-url> academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
 ```
 
 如果要安装完整多学科包：

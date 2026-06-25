@@ -9,17 +9,19 @@ English: [README_EN.md](README_EN.md)
 从完整仓库中只安装 CS 包：
 
 ```bash
-CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills/academic-cs-writing"
-rsync -a --delete ./ "$CODEX_HOME/skills/academic-cs-writing/"
-```
-
-如果在仓库根目录执行：
-
-```bash
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
+cd academic-writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
+```
+
+如果已经进入 `skills/academic-cs-writing/` 目录：
+
+```bash
+CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
+mkdir -p "$CODEX_HOME/skills/academic-cs-writing"
+rsync -a --delete ./ "$CODEX_HOME/skills/academic-cs-writing/"
 ```
 
 ## 包结构

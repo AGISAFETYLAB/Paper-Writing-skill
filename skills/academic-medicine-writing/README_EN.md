@@ -11,6 +11,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the medicine package from the full repository:
 
 ```bash
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
+cd academic-writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"

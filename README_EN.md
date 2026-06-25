@@ -50,7 +50,7 @@ The root router also has a hard rule: **for every user request, classify discipl
 Download the full repository by default:
 
 ```bash
-git clone <repo-url> academic-writing-skill
+git clone https://github.com/AI45Lab/Academic-Writing-skill.git academic-writing-skill
 ```
 
 To install the full multi-discipline bundle:
