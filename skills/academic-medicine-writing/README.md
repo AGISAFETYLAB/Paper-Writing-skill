@@ -6,15 +6,15 @@
   <a href="README_EN.md">English</a>
 </p>
 
-`academic-medicine-writing` 是 `Academic Writing Skill` 中可单独下载和安装的医学论文写作包，适用于临床研究、生物医学、公共卫生、诊断研究、治疗/安全性研究、预测模型、系统综述、case report 和 health-economics manuscript。
+`academic-medicine-writing` 是 `Paper Writing Skill` 中可单独下载和安装的医学论文写作包，适用于临床研究、生物医学、公共卫生、诊断研究、治疗/安全性研究、预测模型、系统综述、case report 和 health-economics manuscript。
 
 ## 单独安装
 
 从完整仓库中只安装医学包：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"

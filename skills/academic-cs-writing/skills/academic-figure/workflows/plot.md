@@ -31,8 +31,8 @@ radars, scatter/Pareto plots, distributions, pies/donuts, and multi-panel combin
 6. Load `references/figures/chart-patterns.md` only when reusable helper patterns are needed.
    Default to Python/matplotlib unless the user explicitly requests another backend.
 7. Read numeric values from workspace result files. Do not hardcode or invent values.
-   For Python plots, use `scripts/cs_palette.py` as the executable source for canonical CS palette
-   names, default display-family mappings, and near-black categorical color checks. Generated
+   For Python plots, use `scripts/cs_palette.py` as the executable source for canonical CS palette names,
+   default display-family mappings, and near-black categorical color checks. Generated
    plotting scripts must import or mirror registered `CS_*` constants before the first plot call.
    If the generated script defines hex colors locally, record the registered palette name from
    `palette-system.md` in the script or execution report; raw unnamed palettes are blocking audit

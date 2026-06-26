@@ -6,7 +6,7 @@
   <a href="README_EN.md"><strong>English</strong></a>
 </p>
 
-`academic-medicine-writing` is the standalone medicine package inside `Academic Writing Skill`. It supports clinical, biomedical, public-health, diagnostic, treatment/safety, prediction-model, systematic-review, case-report, and health-economics manuscripts.
+`academic-medicine-writing` is the standalone medicine package inside `Paper Writing Skill`. It supports clinical, biomedical, public-health, diagnostic, treatment/safety, prediction-model, systematic-review, case-report, and health-economics manuscripts.
 
 The default README is Chinese so repository viewers show the Chinese entry first.
 
@@ -15,8 +15,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the medicine package from the full repository:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"

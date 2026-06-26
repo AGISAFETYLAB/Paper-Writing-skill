@@ -646,7 +646,7 @@ def draw_shared_legend_radar(panel_specs, colors=None, markers=None, linestyles=
         )
 
     labels = [h.get_label() for h in shared_handles]
-    legend_ncol = min(len(methods), 6) if not body_compact else min(4, len(methods))
+    legend_ncol = 2 if len(methods) <= 4 else 3
     legend_fontsize = 8 if body_compact else 15
     fig.legend(
         handles=shared_handles,

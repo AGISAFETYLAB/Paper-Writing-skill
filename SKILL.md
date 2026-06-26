@@ -1,18 +1,18 @@
 ---
-name: academic-writing-skill
+name: paper-writing-skill
 description: >-
   Route academic paper-writing requests to the correct standalone discipline package in this
   repository: academic-cs-writing for computer science/AI/ML systems papers,
   academic-medicine-writing for medical/clinical/biomedical papers, and academic-finance-writing for
-  finance/econometrics/markets papers. Use when the user downloaded the full academic-writing-skill bundle
+  finance/econometrics/markets papers. Use when the user downloaded the full paper-writing-skill bundle
   and asks to write, revise, cite, figure, review, or prepare an academic paper. Always classify the
   discipline before task type. This router delegates only; each discipline package must remain
   independently installable.
 ---
 
-# Academic Writing Skill — Bundle Router
+# Paper Writing Skill — Bundle Router
 
-This is the optional entry router for the full `academic-writing-skill` bundle. It is not required when a
+This is the optional entry router for the full `paper-writing-skill` bundle. It is not required when a
 user installs only one discipline package.
 
 ## Discipline-First Hard Gate

@@ -1,4 +1,4 @@
-# Academic Writing Skill
+# Paper Writing Skill
 
 <p>
   <a href="README.md">简体中文版</a>
@@ -6,7 +6,7 @@
   <a href="README_EN.md"><strong>English</strong></a>
 </p>
 
-`Academic Writing Skill` is a multi-discipline skill bundle for AI academic-writing assistants. It covers paper planning, first-draft generation, section rewriting, manuscript polishing, figure/table work, citation checking, and pre-submission review. It is not just a polishing template: it breaks paper ideas, evidence organization, section writing, prose expression, display design, and reviewer risk into executable writing workflows, so AI-generated and AI-revised paper artifacts can better respect real academic-writing constraints.
+`Paper Writing Skill` is a multi-discipline skill bundle for AI academic-writing assistants. It covers paper planning, first-draft generation, section rewriting, manuscript polishing, figure/table work, citation checking, and pre-submission review. It is not just a polishing template: it breaks paper ideas, evidence organization, section writing, prose expression, display design, and reviewer risk into executable writing workflows, so AI-generated and AI-revised paper artifacts can better respect real academic-writing constraints.
 
 Currently developed disciplines:
 
@@ -29,9 +29,9 @@ Our goal is to help AI learn these practical paper-writing experiences, so gener
 
 ## Core Workflow
 
-Academic Writing Skill first routes the request to the appropriate discipline package, then handles the requested writing task. A complete first draft usually follows `Writing Policy -> user confirmation -> Paper Framework -> user confirmation -> drafting and revision`. If the user only needs section rewriting, polishing, figures, citation checking, or pre-submission review, the corresponding task can be entered directly without running the full-draft workflow.
+Paper Writing Skill first routes the request to the appropriate discipline package, then handles the requested writing task. A complete first draft usually follows `Writing Policy -> user confirmation -> Paper Framework -> user confirmation -> drafting and revision`. If the user only needs section rewriting, polishing, figures, citation checking, or pre-submission review, the corresponding task can be entered directly without running the full-draft workflow.
 
-To avoid one-click first drafts that do not match real paper-writing habits, Academic Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
+To avoid one-click first drafts that do not match real paper-writing habits, Paper Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
 
 ## Chart Design
 
@@ -138,13 +138,13 @@ We also strengthen paper figure and chart design across common chart scenarios i
 
 ## Install
 
-> Quick install: you can copy the repository URL `https://github.com/AI45Lab/Academic-Writing-skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
+> Quick install: you can copy the repository URL `https://github.com/AI45Lab/Paper-Writing-Skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
 
 Clone the repository first:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 ```
 
 ### Codex
@@ -153,15 +153,15 @@ Full bundle, Mac / Linux:
 
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills/academic-writing-skill"
-rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/academic-writing-skill/"
+mkdir -p "$CODEX_HOME/skills/paper-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/paper-writing-skill/"
 ```
 
 Full bundle, Windows PowerShell:
 
 ```powershell
 $CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE ".codex" }
-$Target = Join-Path $CodexHome "skills\academic-writing-skill"
+$Target = Join-Path $CodexHome "skills\paper-writing-skill"
 Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
@@ -173,14 +173,14 @@ Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction Silent
 Full bundle, Mac / Linux:
 
 ```bash
-mkdir -p "$HOME/.claude/skills/academic-writing-skill"
-rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/academic-writing-skill/"
+mkdir -p "$HOME/.claude/skills/paper-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/paper-writing-skill/"
 ```
 
 Full bundle, Windows PowerShell:
 
 ```powershell
-$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-writing-skill"
+$Target = Join-Path $env:USERPROFILE ".claude\skills\paper-writing-skill"
 Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
@@ -223,7 +223,7 @@ The current official instructions of the target venue remain authoritative befor
 ## Example Prompts
 
 ```text
-Use academic-writing-skill to write a CS paper from /path/to/project for EMNLP.
+Use paper-writing-skill to write a CS paper from /path/to/project for EMNLP.
 Use academic-medicine-writing to generate a JAMA-style first draft from this clinical cohort workspace.
 Use academic-finance-writing to revise my asset-pricing working paper and check citation coverage.
 Use academic-cs-writing to polish this paper's Introduction while preserving the original meaning and experimental conclusions.

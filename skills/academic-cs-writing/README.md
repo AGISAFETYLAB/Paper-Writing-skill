@@ -6,18 +6,18 @@
   <a href="README_EN.md">English</a>
 </p>
 
-`academic-cs-writing` 是 `Academic Writing Skill` 中可单独下载和安装的计算机学科论文写作包，适用于 CS、AI/ML、NLP、CV、HCI、系统、数据挖掘、benchmark、dataset 和 software-tool paper。
+`academic-cs-writing` 是 `Paper Writing Skill` 中可单独下载和安装的计算机学科论文写作包，适用于 CS、AI/ML、NLP、CV、HCI、系统、数据挖掘、benchmark、dataset 和 software-tool paper。
 
 ## 单独安装
 
 从完整仓库中只安装 CS 包：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
 ```
 
 如果已经进入 `skills/academic-cs-writing/` 目录：
@@ -25,14 +25,14 @@ rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-wr
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills/academic-cs-writing"
-rsync -a --delete ./ "$CODEX_HOME/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' ./ "$CODEX_HOME/skills/academic-cs-writing/"
 ```
 
 Claude Code 全局安装：
 
 ```bash
 mkdir -p "$HOME/.claude/skills/academic-cs-writing"
-rsync -a --delete skills/academic-cs-writing/ "$HOME/.claude/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' skills/academic-cs-writing/ "$HOME/.claude/skills/academic-cs-writing/"
 ```
 
 Windows PowerShell：

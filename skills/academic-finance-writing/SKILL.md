@@ -5,7 +5,7 @@ description: Use when planning, drafting, revising, citing, preparing figures/ta
 
 # Academic Finance Writing — Standalone Entry Router
 
-This is the standalone finance package of `academic-writing-skill`. It can be installed by itself:
+This is the standalone finance package of `paper-writing-skill`. It can be installed by itself:
 copy this `academic-finance-writing/` folder and no other discipline package is required.
 
 It does no writing work itself. Its job is to route the request to exactly one internal sub-skill

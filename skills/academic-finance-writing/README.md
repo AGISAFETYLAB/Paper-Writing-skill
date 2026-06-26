@@ -6,15 +6,15 @@
   <a href="README_EN.md">English</a>
 </p>
 
-`academic-finance-writing` 是 `Academic Writing Skill` 中可单独下载和安装的金融论文写作包，适用于金融经济学、资产定价、市场微观结构、公司金融、会计、银行、风险、portfolio、trading/backtest、fintech、event study、policy evaluation、theory model 和 econometrics paper。
+`academic-finance-writing` 是 `Paper Writing Skill` 中可单独下载和安装的金融论文写作包，适用于金融经济学、资产定价、市场微观结构、公司金融、会计、银行、风险、portfolio、trading/backtest、fintech、event study、policy evaluation、theory model 和 econometrics paper。
 
 ## 单独安装
 
 从完整仓库中只安装金融包：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"

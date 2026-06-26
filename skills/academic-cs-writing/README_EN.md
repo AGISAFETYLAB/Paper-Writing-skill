@@ -6,7 +6,7 @@
   <a href="README_EN.md"><strong>English</strong></a>
 </p>
 
-`academic-cs-writing` is the standalone computer-science package inside `Academic Writing Skill`. It supports CS, AI/ML, NLP, CV, HCI, systems, data mining, benchmark, dataset, and software-tool papers.
+`academic-cs-writing` is the standalone computer-science package inside `Paper Writing Skill`. It supports CS, AI/ML, NLP, CV, HCI, systems, data mining, benchmark, dataset, and software-tool papers.
 
 The default README is Chinese so repository viewers show the Chinese entry first.
 
@@ -15,11 +15,11 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the CS package from the full repository:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
-rsync -a --delete skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
 ```
 
 If you are already inside `skills/academic-cs-writing/`:
@@ -27,14 +27,14 @@ If you are already inside `skills/academic-cs-writing/`:
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills/academic-cs-writing"
-rsync -a --delete ./ "$CODEX_HOME/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' ./ "$CODEX_HOME/skills/academic-cs-writing/"
 ```
 
 Claude Code global install:
 
 ```bash
 mkdir -p "$HOME/.claude/skills/academic-cs-writing"
-rsync -a --delete skills/academic-cs-writing/ "$HOME/.claude/skills/academic-cs-writing/"
+rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' skills/academic-cs-writing/ "$HOME/.claude/skills/academic-cs-writing/"
 ```
 
 Windows PowerShell:

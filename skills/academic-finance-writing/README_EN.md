@@ -6,7 +6,7 @@
   <a href="README_EN.md"><strong>English</strong></a>
 </p>
 
-`academic-finance-writing` is the standalone finance package inside `Academic Writing Skill`. It supports financial economics, asset pricing, market microstructure, corporate finance, accounting, banking, risk, portfolio, trading/backtest, fintech, event-study, policy-evaluation, theory-model, and econometrics papers.
+`academic-finance-writing` is the standalone finance package inside `Paper Writing Skill`. It supports financial economics, asset pricing, market microstructure, corporate finance, accounting, banking, risk, portfolio, trading/backtest, fintech, event-study, policy-evaluation, theory-model, and econometrics papers.
 
 The default README is Chinese so repository viewers show the Chinese entry first.
 
@@ -15,8 +15,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the finance package from the full repository:
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"

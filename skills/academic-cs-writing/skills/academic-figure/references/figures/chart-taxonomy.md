@@ -105,7 +105,8 @@ chart-family rows above, so later figures in the same paper inherit a consistent
 
 ### Preset: shared-legend radar
 
-Use for one radar panel or two related radar panels that compare the same methods across one or two
+Use the reference-style shared-legend radar preset for one radar panel or two related radar panels
+that compare the same methods across one or two
 taxonomies / metric families. The intended visual grammar is the registered reference-style radar:
 a clean polar profile with muted method colors, white-filled markers, light rings, outside spoke
 labels, and a frameless legend below the figure. For reference-style radar figures, match the
@@ -121,11 +122,12 @@ following stricter design:
   highest-risk, or proposed-method story when one exists.
 - Use **white-filled markers** with colored edges, 1.6--1.9 pt lines, and redundant marker/linestyle
   identities so crossings remain readable in grayscale.
-- Use only a very faint fill (`alpha <= 0.04`) so the interior reads as a soft reference surface
-  rather than dense overlapping polygons.
-- Use dashed light-grey radial rings, light-grey spokes, grey radial tick labels, a restrained
+- Use no filled polygons by default. If a reference surface is necessary, use only faint fills
+  (`alpha <= 0.04`) so the interior reads as a soft reference surface rather than dense overlapping
+  polygons.
+- Use dashed light-grey rings, light-grey spokes, grey radial tick labels, a restrained
   charcoal outer ring, and a small neutral center dot.
-- Use deep-blue bold spoke labels, restrained charcoal title text, and a below-figure legend. For a
+- Use deep blue spoke labels with bold weight, restrained charcoal title text, and a below-figure legend. For a
   single six-method radar, prefer a compact two-row legend; for a wide two-panel radar, a one-row
   shared legend is acceptable when readable.
 - Use **custom theta labels** placed outside the outer ring with alignment adjusted by visual angle;

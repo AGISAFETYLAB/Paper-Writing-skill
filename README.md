@@ -1,4 +1,4 @@
-# Academic Writing Skill
+# Paper Writing Skill
 
 <p>
   <a href="README.md"><strong>简体中文版</strong></a>
@@ -6,7 +6,7 @@
   <a href="README_EN.md">English</a>
 </p>
 
-`Academic Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
+`Paper Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
 
 目前已开发学科：
 
@@ -29,9 +29,9 @@
 
 ## 核心流程
 
-Academic Writing Skill 会先根据用户请求进入对应学科包，再处理具体写作任务。完整初稿通常按 `Writing Policy -> 用户确认 -> Paper Framework -> 用户确认 -> 正文写作与修订` 推进；如果用户只需要章节改写、论文润色、图表、引用核查或投稿前审稿，也可以直接进入对应任务，不必走完整初稿流程。
+Paper Writing Skill 会先根据用户请求进入对应学科包，再处理具体写作任务。完整初稿通常按 `Writing Policy -> 用户确认 -> Paper Framework -> 用户确认 -> 正文写作与修订` 推进；如果用户只需要章节改写、论文润色、图表、引用核查或投稿前审稿，也可以直接进入对应任务，不必走完整初稿流程。
 
-为了避免“一键生成”的初稿不符合真实论文写作习惯，Academic Writing Skill 在生成完整初稿之前设置了两个检查点：agent 必须分别在 `Writing Policy` 和 `Paper Framework` 阶段停下来，将原本可能被静默决定的内容展示给作者确认或修改，包括论文身份、证据边界、目标 venue、section 结构和图表计划等。
+为了避免“一键生成”的初稿不符合真实论文写作习惯，Paper Writing Skill 在生成完整初稿之前设置了两个检查点：agent 必须分别在 `Writing Policy` 和 `Paper Framework` 阶段停下来，将原本可能被静默决定的内容展示给作者确认或修改，包括论文身份、证据边界、目标 venue、section 结构和图表计划等。
 
 ## 图表设计
 
@@ -140,13 +140,13 @@ Academic Writing Skill 会先根据用户请求进入对应学科包，再处理
 
 ### 快速安装
 
-您可以直接把项目地址 `https://github.com/AI45Lab/Academic-Writing-skill.git` 复制给你的 AI agent，让它按照本 README 安装完整包或某个学科包。
+您可以直接把项目地址 `https://github.com/AI45Lab/Paper-Writing-Skill.git` 复制给你的 AI agent，让它按照本 README 安装完整包或某个学科包。
 
-先下载仓库：
+### 仓库下载：
 
 ```bash
-git clone https://github.com/AI45Lab/Academic-Writing-skill.git
-cd Academic-Writing-skill
+git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+cd Paper-Writing-Skill
 ```
 
 ### Codex 安装
@@ -155,15 +155,15 @@ cd Academic-Writing-skill
 
 ```bash
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-mkdir -p "$CODEX_HOME/skills/academic-writing-skill"
-rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/academic-writing-skill/"
+mkdir -p "$CODEX_HOME/skills/paper-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$CODEX_HOME/skills/paper-writing-skill/"
 ```
 
 完整安装，Windows PowerShell：
 
 ```powershell
 $CodexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $env:USERPROFILE ".codex" }
-$Target = Join-Path $CodexHome "skills\academic-writing-skill"
+$Target = Join-Path $CodexHome "skills\paper-writing-skill"
 Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
@@ -173,8 +173,8 @@ Remove-Item -Path (Join-Path $Target ".git") -Recurse -Force -ErrorAction Silent
 安装后可以直接让路由 skill 选择学科：
 
 ```text
-请用 academic-writing-skill 帮我根据这个实验目录写一篇 AI benchmark paper，先停在 Writing Policy。
-Use academic-writing-skill to review this finance manuscript for submission readiness.
+请用 paper-writing-skill 帮我根据这个实验目录写一篇 AI benchmark paper，先停在 Writing Policy。
+Use paper-writing-skill to review this finance manuscript for submission readiness.
 ```
 
 ### Claude Code 安装
@@ -182,14 +182,14 @@ Use academic-writing-skill to review this finance manuscript for submission read
 完整安装，Mac / Linux：
 
 ```bash
-mkdir -p "$HOME/.claude/skills/academic-writing-skill"
-rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/academic-writing-skill/"
+mkdir -p "$HOME/.claude/skills/paper-writing-skill"
+rsync -a --delete --exclude '.git/' ./ "$HOME/.claude/skills/paper-writing-skill/"
 ```
 
 完整安装，Windows PowerShell：
 
 ```powershell
-$Target = Join-Path $env:USERPROFILE ".claude\skills\academic-writing-skill"
+$Target = Join-Path $env:USERPROFILE ".claude\skills\paper-writing-skill"
 Remove-Item $Target -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $Target | Out-Null
 Copy-Item -Path ".\*" -Destination $Target -Recurse -Force
@@ -234,7 +234,7 @@ rsync -a --delete "skills/academic-cs-writing/" "$SKILL_HOME/academic-cs-writing
 ## 示例请求
 
 ```text
-请用 academic-writing-skill 根据 /path/to/project 写一篇 CS 论文，目标会议是 EMNLP。
+请用 paper-writing-skill 根据 /path/to/project 写一篇 CS 论文，目标会议是 EMNLP。
 请用 academic-medicine-writing 根据这个临床队列实验目录生成 JAMA 风格的初稿。
 Use academic-finance-writing to revise my asset-pricing working paper and check citation coverage.
 请用 academic-cs-writing 润色这篇论文的 Introduction，保持原意和实验结论不变。
