@@ -29,6 +29,10 @@ Paper Writing Skill first routes the request to the appropriate discipline packa
 
 To avoid one-click first drafts that do not match real paper-writing habits, Paper Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
 
+## Usage Tips
+
+Before starting, tell the agent the conference or journal you plan to submit to, such as `EMNLP`, `JAMA Network Open`, or `Journal of Finance`. This helps the agent choose a more appropriate template, section structure, length constraints, figure/table conventions, and pre-submission checks.
+
 ## Chart Design
 
 We also strengthen paper figure and chart design across common chart scenarios in CS, medicine, finance, and related disciplines, including comparisons, trends, uncertainty displays, diagnostic evaluation, survival analysis, review evidence, omics, and health-economics displays, with attention to chart-type selection, layout, color, information density, and readability. The table below shows selected examples.
@@ -142,6 +146,25 @@ Clone the repository first:
 git clone <repo-url> Paper-Writing-Skill
 cd Paper-Writing-Skill
 ```
+
+### PDF Build Environment (Optional)
+
+`paper-writing-skill` can generate manuscript source files, figures, and pre-submission checks. To compile a generated LaTeX manuscript package into PDF, the runtime environment needs a LaTeX toolchain such as `latexmk`, `xelatex` / `pdflatex`, and the fonts required by the template.
+
+Minimal Ubuntu / Debian setup:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y latexmk texlive-xetex texlive-latex-extra fonts-noto-cjk
+```
+
+Common build command:
+
+```bash
+latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+```
+
+Some conference or journal templates may require additional TeX Live packages or fonts. If the agent still cannot find the build environment after installation, explicitly specify the available environment or command path in the conversation, for example asking the agent to run `latexmk` inside a specific conda environment, container, or system path.
 
 ### Codex
 

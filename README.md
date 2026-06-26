@@ -29,6 +29,10 @@ Paper Writing Skill 会先根据用户请求进入对应学科包，再处理具
 
 为了避免“一键生成”的初稿不符合真实论文写作习惯，Paper Writing Skill 在生成完整初稿之前设置了两个检查点：agent 必须分别在 `Writing Policy` 和 `Paper Framework` 阶段停下来，将原本可能被静默决定的内容展示给作者确认或修改，包括论文身份、证据边界、目标 venue、section 结构和图表计划等。
 
+## 使用建议
+
+建议在开始前告诉 agent 你想投稿的会议或期刊，例如 `EMNLP`、`JAMA Network Open` 或 `Journal of Finance`。这能帮助 agent 选择更合适的模板、章节结构、篇幅约束、图表习惯和投稿前检查规则。
+
 ## 图表设计
 
 我们对论文图表设计做了单独强化，覆盖计算机、医学、金融等多学科论文中的常见图表场景，包括结果对比、趋势变化、不确定性展示、诊断评估、生存分析、综述证据、组学与健康经济学展示等，并重点关注图表类型选择、版式、配色、信息密度和可读性。下表为部分展示。
@@ -144,6 +148,25 @@ Paper Writing Skill 会先根据用户请求进入对应学科包，再处理具
 git clone <repo-url> Paper-Writing-Skill
 cd Paper-Writing-Skill
 ```
+
+### PDF 编译环境（可选）
+
+`paper-writing-skill` 可以生成论文源码、图表和投稿前检查结果。如果需要把生成的 LaTeX 论文包继续编译成 PDF，运行环境需要具备 LaTeX 工具链，例如 `latexmk`、`xelatex` / `pdflatex` 以及模板所需字体。
+
+Ubuntu / Debian 最小安装：
+
+```bash
+sudo apt-get update
+sudo apt-get install -y latexmk texlive-xetex texlive-latex-extra fonts-noto-cjk
+```
+
+常用编译命令：
+
+```bash
+latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
+```
+
+部分会议或期刊模板可能还需要额外的 TeX Live 宏包或字体。如果安装后 agent 仍找不到编译环境，建议在对话中显式指定可用环境或命令路径，例如要求 agent 在某个 conda 环境、容器或系统路径下运行 `latexmk`。
 
 ### Codex 安装
 
