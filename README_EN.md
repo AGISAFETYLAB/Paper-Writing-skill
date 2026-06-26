@@ -177,13 +177,13 @@ We also strengthen paper figure and chart design across common chart scenarios i
 
 ## Install
 
-> Quick install: you can copy the repository URL `<repo-url>` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
+> Quick install: you can copy the repository URL `https://github.com/AGISAFETYLAB/Paper-Writing-skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
 
 Clone the repository first:
 
 ```bash
-git clone <repo-url> Paper-Writing-Skill
-cd Paper-Writing-Skill
+git clone https://github.com/AGISAFETYLAB/Paper-Writing-skill.git
+cd Paper-Writing-skill
 ```
 
 ### PDF Build Environment (Optional)

@@ -15,8 +15,8 @@ The default README is Chinese so repository viewers show the Chinese entry first
 Install only the medicine package from the full repository:
 
 ```bash
-git clone <repo-url> Paper-Writing-Skill
-cd Paper-Writing-Skill
+git clone https://github.com/AGISAFETYLAB/Paper-Writing-skill.git
+cd Paper-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-medicine-writing/ "$CODEX_HOME/skills/academic-medicine-writing/"

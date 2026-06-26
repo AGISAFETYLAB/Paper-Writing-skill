@@ -13,8 +13,8 @@
 从完整仓库中只安装金融包：
 
 ```bash
-git clone <repo-url> Paper-Writing-Skill
-cd Paper-Writing-Skill
+git clone https://github.com/AGISAFETYLAB/Paper-Writing-skill.git
+cd Paper-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete skills/academic-finance-writing/ "$CODEX_HOME/skills/academic-finance-writing/"

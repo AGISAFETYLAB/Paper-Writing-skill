@@ -13,8 +13,8 @@
 从完整仓库中只安装 CS 包：
 
 ```bash
-git clone <repo-url> Paper-Writing-Skill
-cd Paper-Writing-Skill
+git clone https://github.com/AGISAFETYLAB/Paper-Writing-skill.git
+cd Paper-Writing-skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 rsync -a --delete --delete-excluded --exclude '_local/' --exclude 'SKILL-FLOW.md' skills/academic-cs-writing/ "$CODEX_HOME/skills/academic-cs-writing/"
