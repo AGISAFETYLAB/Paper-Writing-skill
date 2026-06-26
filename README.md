@@ -1,9 +1,8 @@
 # Paper Writing Skill
 
-<p>
-  <a href="README.md"><strong>简体中文版</strong></a>
-  &nbsp;|&nbsp;
-  <a href="README_EN.md">English</a>
+<p align="center">
+  <img src="assets/readme/language/zh-active.svg" alt="简体中文" />
+  <a href="README_EN.md"><img src="assets/readme/language/en-inactive.svg" alt="English" /></a>
 </p>
 
 `Paper Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
@@ -252,5 +251,5 @@ Use academic-finance-writing to revise my asset-pricing working paper and check 
   <a href="https://github.com/Ssjoo02"><img src="assets/readme/contributors/ssjoo02.png" width="60" alt="Contributor" /></a>
   <a href="https://github.com/KimiYukikaze"><img src="assets/readme/contributors/kimiyukikaze.png" width="60" alt="Contributor" /></a>
   <a href="https://github.com/tryedk"><img src="assets/readme/contributors/tryedk.png" width="60" alt="Contributor" /></a>
-  <a href="https://github.com/AI45Lab"><img src="assets/readme/contributors/openai45lab.png" width="60" alt="Contributor" /></a>
+  <a href="https://github.com/adwardlee"><img src="assets/readme/contributors/adwardlee.png" width="60" alt="Contributor" /></a>
 </p>

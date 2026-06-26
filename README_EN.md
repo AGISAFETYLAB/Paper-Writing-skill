@@ -1,9 +1,8 @@
 # Paper Writing Skill
 
-<p>
-  <a href="README.md">简体中文版</a>
-  &nbsp;|&nbsp;
-  <a href="README_EN.md"><strong>English</strong></a>
+<p align="center">
+  <a href="README.md"><img src="assets/readme/language/zh-inactive.svg" alt="简体中文" /></a>
+  <img src="assets/readme/language/en-active.svg" alt="English" />
 </p>
 
 `Paper Writing Skill` is a multi-discipline skill bundle for AI academic-writing assistants. It covers paper planning, first-draft generation, section rewriting, manuscript polishing, figure/table work, citation checking, and pre-submission review. It is not just a polishing template: it breaks paper ideas, evidence organization, section writing, prose expression, display design, and reviewer risk into executable writing workflows, so AI-generated and AI-revised paper artifacts can better respect real academic-writing constraints.
@@ -241,5 +240,5 @@ This repository is under active development. Feedback, bug reports, and improvem
   <a href="https://github.com/Ssjoo02"><img src="assets/readme/contributors/ssjoo02.png" width="60" alt="Contributor" /></a>
   <a href="https://github.com/KimiYukikaze"><img src="assets/readme/contributors/kimiyukikaze.png" width="60" alt="Contributor" /></a>
   <a href="https://github.com/tryedk"><img src="assets/readme/contributors/tryedk.png" width="60" alt="Contributor" /></a>
-  <a href="https://github.com/AI45Lab"><img src="assets/readme/contributors/openai45lab.png" width="60" alt="Contributor" /></a>
+  <a href="https://github.com/adwardlee"><img src="assets/readme/contributors/adwardlee.png" width="60" alt="Contributor" /></a>
 </p>
