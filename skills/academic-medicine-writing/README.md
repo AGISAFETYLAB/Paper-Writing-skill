@@ -13,7 +13,7 @@
 从完整仓库中只安装医学包：
 
 ```bash
-git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+git clone <repo-url> Paper-Writing-Skill
 cd Paper-Writing-Skill
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"

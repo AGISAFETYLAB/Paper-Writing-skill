@@ -138,12 +138,12 @@ We also strengthen paper figure and chart design across common chart scenarios i
 
 ## Install
 
-> Quick install: you can copy the repository URL `https://github.com/AI45Lab/Paper-Writing-Skill.git` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
+> Quick install: you can copy the repository URL `<repo-url>` directly to your AI agent and ask it to install the full bundle or one discipline package by following this README.
 
 Clone the repository first:
 
 ```bash
-git clone https://github.com/AI45Lab/Paper-Writing-Skill.git
+git clone <repo-url> Paper-Writing-Skill
 cd Paper-Writing-Skill
 ```
 
@@ -237,4 +237,9 @@ This repository is under active development. Feedback, bug reports, and improvem
 
 ## Contributors
 
-- AI45Lab <852404433@qq.com>
+<p>
+  <a href="https://github.com/Ssjoo02"><img src="assets/readme/contributors/ssjoo02.png" width="60" alt="Contributor" /></a>
+  <a href="https://github.com/KimiYukikaze"><img src="assets/readme/contributors/kimiyukikaze.png" width="60" alt="Contributor" /></a>
+  <a href="https://github.com/tryedk"><img src="assets/readme/contributors/tryedk.png" width="60" alt="Contributor" /></a>
+  <a href="https://github.com/AI45Lab"><img src="assets/readme/contributors/openai45lab.png" width="60" alt="Contributor" /></a>
+</p>
