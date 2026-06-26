@@ -29,6 +29,45 @@ Paper Writing Skill first routes the request to the appropriate discipline packa
 
 To avoid one-click first drafts that do not match real paper-writing habits, Paper Writing Skill sets two checkpoints before generating a complete draft: the agent must stop at both the `Writing Policy` and `Paper Framework` stages, exposing decisions that might otherwise be made silently for author confirmation or revision, including paper identity, evidence boundaries, target venue, section structure, and figure/table plans.
 
+<details>
+<summary>Show Core Workflow Diagram</summary>
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                   Paper Writing Skill Workflow                │
+│                                                              │
+│   User input: materials / draft / project / writing task      │
+│         │                                                    │
+│         ▼                                                    │
+│   ┌──────────┐     ┌──────────┐     ┌──────────┐            │
+│   │Discipline│────▶│Task type │────▶│  Venue   │            │
+│   │ routing  │     │draft/task│     │ template │            │
+│   │CS/Med/Fin│     │          │     │ checks   │            │
+│   └──────────┘     └──────────┘     └──────────┘            │
+│                            │                                 │
+│              ┌─────────────┴─────────────┐                  │
+│              ▼                           ▼                  │
+│   ┌──────────────┐            ┌──────────────┐              │
+│   │ Full draft   │            │ Focused task │              │
+│   │ Writing      │            │ Polish/Figure│              │
+│   │ Policy       │            │ Cite/Review  │              │
+│   │ Framework    │            │              │              │
+│   └──────────────┘            └──────────────┘              │
+│              │                           │                  │
+│              └─────────────┬─────────────┘                  │
+│                            ▼                                 │
+│   ┌──────────┐     ┌──────────┐     ┌──────────┐            │
+│   │ Drafting │────▶│ Figure & │────▶│Pre-submit│            │
+│   │ Revision │     │ Citation │     │ checks   │            │
+│   └──────────┘     └──────────┘     └──────────┘            │
+│         │                                                    │
+│         ▼                                                    │
+│   Output: manuscript / figures / references / submission     │
+└──────────────────────────────────────────────────────────────┘
+```
+
+</details>
+
 ## Usage Tips
 
 Before starting, tell the agent the conference or journal you plan to submit to, such as `EMNLP`, `JAMA Network Open`, or `Journal of Finance`. This helps the agent choose a more appropriate template, section structure, length constraints, figure/table conventions, and pre-submission checks.
