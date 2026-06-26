@@ -245,3 +245,7 @@ Use academic-finance-writing to revise my asset-pricing working paper and check 
 ## 维护声明
 
 本仓库仍在持续开发中，欢迎大家试用、反馈问题和提出改进建议。我们会第一时间处理影响安装、独立运行、学科路由、写作流程和输出质量的问题，并尽快更新 README、skill 指令和校验脚本。若在使用中发现某个 venue、学科场景或写作任务支持不足，也欢迎反馈具体场景和复现方式。
+
+## 贡献者
+
+- AI45Lab <852404433@qq.com>

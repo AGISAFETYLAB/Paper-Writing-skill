@@ -234,3 +234,7 @@ Use academic-medicine-writing to run a pre-submission check, focusing on STROBE,
 ## Maintenance Statement
 
 This repository is under active development. Feedback, bug reports, and improvement suggestions are welcome. We will address issues that affect installation, standalone package use, discipline routing, writing workflow, and output quality as quickly as possible, and update the README, skill instructions, and validators promptly. If a venue, discipline scenario, or writing task is not well covered, please report the concrete use case and reproduction path.
+
+## Contributors
+
+- AI45Lab <852404433@qq.com>
