@@ -1,9 +1,6 @@
 # Paper Writing Skill
 
-<p align="center">
-  <img src="assets/readme/language/zh-active.svg" alt="简体中文" />
-  <a href="README_EN.md"><img src="assets/readme/language/en-inactive.svg" alt="English" /></a>
-</p>
+<p><b>简体中文</b> · <a href="README_EN.md">English</a></p>
 
 `Paper Writing Skill` 是一个面向 AI 论文写作助手的多学科 skill 包，覆盖论文规划、初稿生成、章节改写、论文润色、图表表达、引用核查和投稿前审查等常见写作任务。它不是简单的“润色模板”，而是把论文构思、证据组织、章节写作、语言表达、图表设计和审稿风险拆成可执行的写作流程，让 AI 在生成和修改论文 artifact 时更像一个真正理解学术写作约束的助手。
 

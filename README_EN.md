@@ -1,9 +1,6 @@
 # Paper Writing Skill
 
-<p align="center">
-  <a href="README.md"><img src="assets/readme/language/zh-inactive.svg" alt="简体中文" /></a>
-  <img src="assets/readme/language/en-active.svg" alt="English" />
-</p>
+<p><a href="README.md">简体中文</a> · <b>English</b></p>
 
 `Paper Writing Skill` is a multi-discipline skill bundle for AI academic-writing assistants. It covers paper planning, first-draft generation, section rewriting, manuscript polishing, figure/table work, citation checking, and pre-submission review. It is not just a polishing template: it breaks paper ideas, evidence organization, section writing, prose expression, display design, and reviewer risk into executable writing workflows, so AI-generated and AI-revised paper artifacts can better respect real academic-writing constraints.
 
