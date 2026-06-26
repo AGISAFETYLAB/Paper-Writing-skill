@@ -20,6 +20,10 @@ The writing approach is distilled from widely recognized research-writing experi
 - Ten Tips for Writing CS Papers — Sebastian Nowozin: <https://www.nowozin.net/sebastian/blog/ten-tips-for-writing-cs-papers-part-1.html>
 - Writing a Good Introduction — Henning Schulzrinne, from Jim Kurose: <https://www.cs.columbia.edu/~hgs/etc/intro-style.html>
 - The Science of Scientific Writing — Gopen and Swan: <https://inpp.ohio.edu/~meisel/PHYS6751/file/ScientificWriting_GGopenJSwanAmSci1990.pdf>
+- How to write a good CVPR submission — Bill Freeman: <https://www.cs.ryerson.ca/~wangcs/resources/How-to-write-a-good-CVPR-submission.pdf>
+- How to Get Your SIGGRAPH Paper Rejected — Jim Kajiya: <https://www.siggraph.org/sites/default/files/kajiya.pdf>
+- Writing Flow: How to Make Your Writing Flow — MasterClass: <https://www.masterclass.com/articles/writing-flow>
+- The Four Levels of Flow in Writing — Anthony Risko: <https://www.grammarflip.com/blog/the-four-levels-of-flow-in-writing-what-it-means-when-writing-flows/>
 
 Our goal is to help AI learn these practical paper-writing experiences, so generated manuscripts better match the writing habits and expression style of real researchers.
 
